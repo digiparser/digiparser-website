@@ -7,9 +7,33 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "**.githubusercontent.com",
+        protocol: 'https',
+        hostname: 'www.digiparser.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'app.digiparser.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'files.stripe.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'marketplace.canva.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'template.canva.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'tailwindui.com',
+      }
     ],
   },
 }
