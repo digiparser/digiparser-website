@@ -25,7 +25,11 @@ import {
   X,
   type Icon as LucideIcon,
 } from "lucide-react"
-
+import {
+  ComputerDesktopIcon,
+  MoonIcon,
+  SunIcon,
+} from '@heroicons/react/24/outline';
 export type Icon = LucideIcon
 
 export const Icons = {
@@ -47,9 +51,9 @@ export const Icons = {
   arrowRight: ArrowRight,
   help: HelpCircle,
   pizza: Pizza,
-  sun: SunMedium,
-  moon: Moon,
-  laptop: Laptop,
+  sun: SunIcon,
+  moon: MoonIcon,
+  laptop: ComputerDesktopIcon,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

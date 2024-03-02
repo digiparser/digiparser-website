@@ -8,20 +8,18 @@ export function BusinessLine() {
     >
       <div className="container mx-auto">
         <h2 className="text-center text-sm font-semibold uppercase">
-          The worlds most innovative companies use our app
+          The worlds most innovative companies automated their document workflows
         </h2>
 
         <div className="my-7 flex flex-wrap items-center justify-center gap-10 gap-y-8 lg:gap-14">
           {features.map((feature) => (
-            <Link
-              target="_blank"
+            <div
               key={feature.title}
-              href={feature.href}
               aria-label={feature.title}
               className="flex flex-col items-center transition duration-300 hover:text-black dark:hover:text-white"
             >
               {feature.icon}
-            </Link>
+            </div>
           ))}
         </div>
       </div>

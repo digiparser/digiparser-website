@@ -17,7 +17,7 @@ export function GetStartedButton() {
       className={cn(buttonVariants({ size: "lg" }))}
       onClick={handleOnClick}
     >
-      Get started
+      Get started free
     </Button>
   );
 }

@@ -1,6 +1,7 @@
 import { Inter as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 
+import 'reactflow/dist/style.css';
 import "@/styles/globals.css"
 
 import { Metadata, Viewport } from "next"
@@ -10,6 +11,7 @@ import { absoluteUrl, cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@/components/analytics"
 import { ThemeProvider } from "@/components/theme-provider"
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -33,19 +35,19 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
+    "Automation",
+    "Document Workflows",
+    "Invoice OCR",
+    "Receipt OCR",
+    "Automate Business Processes",
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "thepantales",
+      url: "https://x.com/thepantales",
     },
   ],
-  creator: "shadcn",
+  creator: "thepantales",
 
   openGraph: {
     type: "website",
@@ -60,7 +62,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og.jpg`],
-    creator: "@shadcn",
+    creator: "@thepantales",
   },
   icons: {
     icon: "/favicon.ico",
@@ -92,6 +94,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
           <Analytics />
           <Toaster />
+          <TailwindIndicator />
         </ThemeProvider>
       </body>
     </html>

@@ -8,14 +8,16 @@ import { BusinessLine } from "@/components/dashboard/businessline";
 import CallToActionComponent from "@/components/dashboard/calltoaction";
 import Featuressection from "@/components/dashboard/feautressection";
 import { Icons } from "@/components/shared/icons";
+import {VideoCameraIcon} from '@heroicons/react/24/outline';
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 
 export default async function IndexPage() {
   return (
     <>
       <section className="space-y-6 pb-12 pt-16 lg:py-28">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-5 text-center">
+        <div className="container flex max-w-[70rem] flex-col items-center gap-5 text-center">
           <Link
-            href="https://twitter.com/codehagen"
+            href="/"
             className={cn(
               buttonVariants({ variant: "outline", size: "sm" }),
               "animate-fade-up opacity-0",
@@ -23,7 +25,8 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
             target="_blank"
           >
-            Introducing on <Icons.twitter className="ml-2 h-4 w-4" />
+            Whitelabel support available for agencies
+            <ChevronRightIcon className="ml-2 h-4 w-4" />
           </Link>
 
           <h1
@@ -31,10 +34,11 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
             <Balancer>
-              Budget Better, Gain More Experience{" "}
+              Automate Document Workflows{" "}
               <span className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
-                Badget
+                in&nbsp;Minutes
               </span>
+              {" "}with No-Code
             </Balancer>
           </h1>
 
@@ -43,8 +47,7 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
           >
             <Balancer>
-              Empower your financial management with AI-driven insights, making
-              tracking and optimizing your finances effortless.
+              Extract data from any document with our AI powered OCR models, and automate business processes with simple no-code workflow builder.
             </Balancer>
           </p>
 
@@ -60,10 +63,11 @@ export default async function IndexPage() {
                 "px-4",
               )}
             >
-              <Icons.chevrondown className="mr-2 h-4 w-4" />
+              <VideoCameraIcon className="mr-2 h-4 w-4" />
               <p>
-                <span className="hidden sm:inline-block">Lets explore</span>{" "}
-                Badget{" "}
+                Watch{" "}
+                <span className="hidden sm:inline-block">Demo</span>{" "}
+                Video
               </p>
             </Link>
           </div>

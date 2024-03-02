@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { MainNav } from "@/components/main-nav"
 import { SiteFooter } from "@/components/site-footer"
+import { ModeToggle } from "@/components/mode-toggle";
+import * as React from "react";
 
 interface MarketingLayoutProps {
   children: React.ReactNode
@@ -18,21 +20,37 @@ export default async function MarketingLayout({
       <header className="container z-40 bg-background">
         <div className="flex h-20 items-center justify-between py-6">
           <MainNav items={marketingConfig.mainNav} />
-          <nav>
-            <Link
-              href="/login"
-              className={cn(
-                buttonVariants({ variant: "secondary", size: "sm" }),
-                "px-4"
-              )}
-            >
-              Login
-            </Link>
+          <nav className={'gap-6 md:flex'}>
+            <div className="flex gap-2 md:gap-4">
+              <div
+                className={'mr-2 flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm'}>
+                <ModeToggle/>
+              </div>
+              <Link
+                href="/login"
+                className={cn(
+                  buttonVariants({variant: "ghost", size: "sm"}),
+                  "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm"
+                )}
+              >
+                Login
+              </Link>
+              <Link
+                href="/login"
+                className={cn(
+                  buttonVariants({variant: "default", size: "sm"}),
+                  "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm"
+                )}
+              >
+                Start free
+              </Link>
+            </div>
+
           </nav>
         </div>
       </header>
       <main className="flex-1">{children}</main>
-      <SiteFooter />
+      <SiteFooter/>
     </div>
   )
 }
