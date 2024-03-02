@@ -23,14 +23,13 @@ import {
   Twitter,
   User,
   X,
-  type Icon as LucideIcon,
 } from "lucide-react"
 import {
   ComputerDesktopIcon,
   MoonIcon,
   SunIcon,
 } from '@heroicons/react/24/outline';
-export type Icon = LucideIcon
+export type Icon = any
 
 export const Icons = {
   logo: Command,

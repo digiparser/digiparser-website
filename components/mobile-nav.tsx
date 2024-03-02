@@ -1,14 +1,13 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { MainNavItem } from "types"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { useLockBody } from "@/hooks/use-lock-body"
 import { Icons } from "@/components/icons"
 
 interface MobileNavProps {
-  items: MainNavItem[]
+  items: []
   children?: React.ReactNode
 }
 
@@ -27,16 +26,16 @@ export function MobileNav({ items, children }: MobileNavProps) {
           <span className="font-bold">{siteConfig.name}</span>
         </Link>
         <nav className="grid grid-flow-row auto-rows-max text-sm">
-          {items.map((item, index) => (
+          {items.map((item: any, index) => (
             <Link
               key={index}
-              href={item.disabled ? "#" : item.href}
+              href={item?.disabled ? "#" : item?.href}
               className={cn(
                 "flex w-full items-center rounded-md p-2 text-sm font-medium hover:underline",
-                item.disabled && "cursor-not-allowed opacity-60"
+                item?.disabled && "cursor-not-allowed opacity-60"
               )}
             >
-              {item.title}
+              {item?.title}
             </Link>
           ))}
         </nav>

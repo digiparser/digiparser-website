@@ -1,6 +1,5 @@
-import { SiteConfig } from "types"
 
-export const siteConfig: SiteConfig = {
+export const siteConfig = {
   name: "DigiParser",
   description:
     "Automate Document Workflows and Processes with AI.",

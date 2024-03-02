@@ -3,19 +3,18 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-import { SidebarNavItem } from "types"
 import { cn } from "@/lib/utils"
 
 export interface DocsSidebarNavProps {
-  items: SidebarNavItem[]
+  items: []
 }
 
-export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
+export function DocsSidebarNav({ items }) {
   const pathname = usePathname()
 
   return items.length ? (
     <div className="w-full">
-      {items.map((item, index) => (
+      {items.map((item: any, index) => (
         <div key={index} className={cn("pb-8")}>
           <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">
             {item.title}
@@ -30,7 +29,7 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
 }
 
 interface DocsSidebarNavItemsProps {
-  items: SidebarNavItem[]
+  items: []
   pathname: string | null
 }
 
@@ -40,7 +39,7 @@ export function DocsSidebarNavItems({
 }: DocsSidebarNavItemsProps) {
   return items?.length ? (
     <div className="grid grid-flow-row auto-rows-max text-sm">
-      {items.map((item, index) =>
+      {items.map((item: any, index) =>
         !item.disabled && item.href ? (
           <Link
             key={index}

@@ -4,7 +4,6 @@ import * as React from "react"
 import Link from "next/link"
 import { useSelectedLayoutSegment } from "next/navigation"
 
-import { MainNavItem } from "types"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
@@ -13,11 +12,11 @@ import Image from "next/image"
 import { ModeToggle } from "@/components/mode-toggle";
 
 interface MainNavProps {
-  items?: MainNavItem[]
+  items?: []
   children?: React.ReactNode
 }
 
-export function MainNav({ items, children }: MainNavProps) {
+export function MainNav({ items, children }: any) {
   const segment = useSelectedLayoutSegment()
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
 
@@ -31,7 +30,7 @@ export function MainNav({ items, children }: MainNavProps) {
       </Link>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">
-          {items?.map((item, index) => (
+          {items?.map((item: any, index) => (
             <Link
               key={index}
               href={item.disabled ? "#" : item.href}
