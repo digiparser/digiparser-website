@@ -26,26 +26,25 @@ export default async function MarketingLayout({
                 className={'mr-2 flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm'}>
                 <ModeToggle/>
               </div>
-              <Link
-                href="/login"
-                className={cn(
-                  buttonVariants({variant: "ghost", size: "sm"}),
-                  "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm"
-                )}
-              >
-                Login
-              </Link>
-              <Link
-                href="/login"
-                className={cn(
-                  buttonVariants({variant: "default", size: "sm"}),
-                  "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm"
-                )}
-              >
-                Start free
-              </Link>
+              {/*<Link*/}
+              {/*  href="/login"*/}
+              {/*  className={cn(*/}
+              {/*    buttonVariants({variant: "ghost", size: "sm"}),*/}
+              {/*    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm"*/}
+              {/*  )}*/}
+              {/*>*/}
+              {/*  Login*/}
+              {/*</Link>*/}
+              {/*<Link*/}
+              {/*  href="/login"*/}
+              {/*  className={cn(*/}
+              {/*    buttonVariants({variant: "default", size: "sm"}),*/}
+              {/*    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm"*/}
+              {/*  )}*/}
+              {/*>*/}
+              {/*  Start free*/}
+              {/*</Link>*/}
             </div>
-
           </nav>
         </div>
       </header>

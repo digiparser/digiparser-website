@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 export function GetStartedButton() {
   const router = useRouter();
@@ -13,11 +14,13 @@ export function GetStartedButton() {
   };
 
   return (
-    <Button
+    <Link
       className={cn(buttonVariants({ size: "lg" }))}
-      onClick={handleOnClick}
+      // onClick={handleOnClick}
+      href={'#waitlist'}
     >
-      Get started free
-    </Button>
+      {/*Get started free*/}
+      Join the waitlist now
+    </Link>
   );
 }

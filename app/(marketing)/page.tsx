@@ -10,23 +10,25 @@ import Featuressection from "@/components/dashboard/feautressection";
 import { Icons } from "@/components/shared/icons";
 import {VideoCameraIcon} from '@heroicons/react/24/outline';
 import { ChevronRightIcon } from "@radix-ui/react-icons";
+import SignUpFormReact from "@/components/waitlistForm";
+import FAQ from "@/components/dashboard/faq";
 
 export default async function IndexPage() {
   return (
     <>
-      <section className="space-y-6 pb-12 pt-16 lg:py-28">
+      <section id={'waitlist'} className="space-y-6 pb-12 pt-16 lg:py-28">
         <div className="container flex max-w-[70rem] flex-col items-center gap-5 text-center">
           <Link
             href="/"
             className={cn(
               buttonVariants({ variant: "outline", size: "sm" }),
-              "animate-fade-up opacity-0",
+              "animate-fade-up opacity-0 text-muted-foreground",
             )}
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
             target="_blank"
           >
-            Whitelabel support available for agencies
-            <ChevronRightIcon className="ml-2 h-4 w-4" />
+            Whitelabel support coming soon for agencies
+            {/*<ChevronRightIcon className="ml-2 h-4 w-4" />*/}
           </Link>
 
           <h1
@@ -55,21 +57,22 @@ export default async function IndexPage() {
             className="flex animate-fade-up justify-center space-x-2 opacity-0 md:space-x-4"
             style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
           >
-            <GetStartedButton />
-            <Link
-              href={"/signin"}
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                "px-4",
-              )}
-            >
-              <VideoCameraIcon className="mr-2 h-4 w-4" />
-              <p>
-                Watch{" "}
-                <span className="hidden sm:inline-block">Demo</span>{" "}
-                Video
-              </p>
-            </Link>
+            {/*<GetStartedButton />*/}
+            {/*<Link*/}
+            {/*  href={"/signin"}*/}
+            {/*  className={cn(*/}
+            {/*    buttonVariants({ variant: "outline", size: "lg" }),*/}
+            {/*    "px-4",*/}
+            {/*  )}*/}
+            {/*>*/}
+            {/*  <VideoCameraIcon className="mr-2 h-4 w-4" />*/}
+            {/*  <p>*/}
+            {/*    Watch{" "}*/}
+            {/*    <span className="hidden sm:inline-block">Demo</span>{" "}*/}
+            {/*    Video*/}
+            {/*  </p>*/}
+            {/*</Link>*/}
+            <SignUpFormReact />
           </div>
         </div>
       </section>
@@ -80,9 +83,13 @@ export default async function IndexPage() {
       <section>
         <CallToActionComponent />
       </section>
-      {/* <section>
-        <FeatureSection1 />
-      </section> */}
+      <section>
+        <FAQ />
+      </section>
+      {/*<section>*/}
+      {/*  <FeatureSection1 />*/}
+      {/*</section>*/}
+      
     </>
   );
 }
