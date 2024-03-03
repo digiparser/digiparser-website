@@ -72,12 +72,6 @@ const CallToActionComponent = () => {
           </p>
         </div>
       </div>
-      {/*<div*/}
-      {/*  className="mt-8 flex animate-fade-up justify-center space-x-2 opacity-0"*/}
-      {/*  style={{animationDelay: "0.55s", animationFillMode: "forwards"}}*/}
-      {/*>*/}
-      {/*  <GetStartedButton/>*/}
-      {/*</div>*/}
       <section
         className="container space-y-6 py-8 md:py-12 lg:py-24 text-left"
       >
