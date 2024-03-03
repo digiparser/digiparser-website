@@ -67,7 +67,7 @@ const CallToActionComponent = () => {
             style={{animationDelay: "0.35s", animationFillMode: "forwards"}}
           >
             <Balancer>
-              It's not just another OCR API, it's a suite of tools that allow you to automate business processes from end to end with ease.
+              It&apos;s not just another OCR API, it&apos;s a suite of tools that allow you to automate business processes from end to end with ease.
             </Balancer>
           </p>
         </div>
