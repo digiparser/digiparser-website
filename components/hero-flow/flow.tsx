@@ -67,7 +67,7 @@ const OutputNode = ({data}) => (
 const AiParserNode = ({data}) => (
   <div style={{width: 50, height: 50}} className={'group text-foreground'}>
     <Image src={data.icon} alt={data.label} width={50} height={50}
-           style={{width: '50px', height: '50px', borderRadius: '50%'}}/>
+           style={{width: '50px', height: '50px', borderRadius: '5px'}}/>
     <Handle type="target" position={Position.Left}/>
     <Handle type="source" position={Position.Right}/>
     <SmallHandle type="source" id={'bottomParser'} position={Position.Bottom}/>

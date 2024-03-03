@@ -23,7 +23,10 @@ export function MainNav({ items, children }: any) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Image src="/img/logo.svg" alt="logo" width={30} height={30} className={'mr-1'} />
+        <div>
+          <Image src="/img/logo.svg" alt="logo" width={16} height={16} className={'mr-1 dark:hidden'} />
+          <Image src="/img/logo-light.svg" alt="logo" width={16} height={16} className={'mr-1 hidden dark:block'} />
+        </div>
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
         </span>
@@ -51,7 +54,12 @@ export function MainNav({ items, children }: any) {
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
-        {showMobileMenu ? <Icons.close /> : <Icons.logo />}
+        {showMobileMenu ? <Icons.close /> : (<div>
+          <div>
+            <Image src="/img/logo.svg" alt="logo" width={16} height={16} className={'mr-1 dark:hidden'}/>
+            <Image src="/img/logo-light.svg" alt="logo" width={16} height={16} className={'mr-1 hidden dark:block'}/>
+          </div>
+        </div>)}
         <span className="font-bold">Menu</span>
       </button>
       {showMobileMenu && items && (

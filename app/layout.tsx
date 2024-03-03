@@ -65,11 +65,11 @@ export const metadata: Metadata = {
     creator: "@thepantales",
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/img/favicon.ico",
+    shortcut: "/img/favicon-16x16.png",
+    apple: "/img/apple-touch-icon.png",
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
+  manifest: `${siteConfig.url}/img/site.webmanifest`,
 }
 
 export const viewport: Viewport = {
