@@ -101,6 +101,43 @@ export const Post = defineDocumentType(() => ({
   computedFields,
 }))
 
+export const Blog = defineDocumentType(() => ({
+  name: "Blog",
+  filePathPattern: `blog/**/*.md`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    description: {
+      type: "string",
+    },
+    date: {
+      type: "date",
+      required: false,
+    },
+    published: {
+      type: "boolean",
+      default: true,
+    },
+    image: {
+      type: "string",
+      required: false,
+    },
+    authors: {
+      // Reference types are not embedded.
+      // Until this is fixed, we can use a simple list.
+      // type: "reference",
+      // of: Author,
+      type: "list",
+      of: { type: "string" },
+      required: false,
+    },
+  },
+  computedFields,
+}))
+
 export const Author = defineDocumentType(() => ({
   name: "Author",
   filePathPattern: `authors/**/*.mdx`,
@@ -143,7 +180,7 @@ export const Page = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Page, Doc, Guide, Post, Author],
+  documentTypes: [Page, Doc, Guide, Post, Blog, Author],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
