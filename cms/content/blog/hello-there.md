@@ -1,6 +1,6 @@
 ---
 title: 'hello there'
-status: 'draft'
+status: 'published'
 author:
   name: ''
   picture: 'https://avatars.githubusercontent.com/u/148678942?v=4'
