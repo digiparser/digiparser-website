@@ -1,11 +1,11 @@
 {
-  "commit": "d867d6f55e75fd68ffdf9a0f574ddbe4d20073fe",
-  "generated": "Tue, 05 Mar 2024 20:27:20 GMT",
+  "commit": "425ddecb086014624c74a177b5b2304020f48391",
+  "generated": "2024-03-05T20:57:41.232Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "a1a20436dce2abfa35fb5e1e9ced4c91eb879a9e",
-        "hash": "2576755501",
+        "commit": "425ddecb086014624c74a177b5b2304020f48391",
+        "hash": "468926951",
         "path": "cms/content/blog/alright.md"
       },
       "author": {
@@ -18,6 +18,8 @@
       "publishedAt": "2024-03-04T19:27:34.457Z",
       "slug": "alright",
       "status": "published",
+      "tags": [
+      ],
       "title": "Preview Mode for Headless CMS"
     }
   ]
