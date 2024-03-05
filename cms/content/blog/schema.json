@@ -1,0 +1,14 @@
+{
+  "title": "blog",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": false,
+      "description": "Add tags",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Tags",
+      "values": []
+    }
+  }
+}
