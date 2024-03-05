@@ -154,7 +154,7 @@ async function getData({params}: Params) {
 
   const contentLayerPost = allBlogs.find((post) => post.slugAsParams === params.slug)
   post.code = contentLayerPost?.body?.code; 
-  console.log('contentLayerPost', allBlogs, contentLayerPost);
+
   if (!post) {
     notFound()
   }
