@@ -139,7 +139,7 @@ export default async function Post(params: Params) {
 async function getData({params}: Params) {
   const db = await load()
 
-  const post = await db
+  const post: any = await db
     .find<Post>({collection: 'blog', slug: params.slug}, [
       'title',
       'publishedAt',
