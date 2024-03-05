@@ -4,34 +4,17 @@ import { allPosts } from "contentlayer/generated"
 import { compareDesc } from "date-fns"
 
 import { formatDate } from "@/lib/utils"
-import { getDocuments } from 'outstatic/server'
 
 export const metadata = {
   title: "Blog",
 }
 
-async function getData() {
-  const posts = getDocuments('blog', [
-    'title',
-    'publishedAt',
-    'slug',
-    'author',
-    'description',
-    'coverImage'
-  ])
-  console.log('posts', posts);
-  return posts
-}
-
 export default async function BlogPage() {
-
-  const posts = await getData()
-  
-  // const posts = allPosts
-  //   .filter((post) => post.published)
-  //   .sort((a, b) => {
-  //     return compareDesc(new Date(a.date), new Date(b.date))
-  //   })
+  const posts = allPosts
+    .filter((post) => post.published)
+    .sort((a, b) => {
+      return compareDesc(new Date(a.date), new Date(b.date))
+    })
 
   return (
     <div className="container max-w-4xl py-6 lg:py-10">
@@ -50,12 +33,12 @@ export default async function BlogPage() {
         <div className="grid gap-10 sm:grid-cols-2">
           {posts.map((post, index) => (
             <article
-              key={post.slug}
+              key={post._id}
               className="group relative flex flex-col space-y-2"
             >
-              {post.coverImage && (
+              {post.image && (
                 <Image
-                  src={post.coverImage}
+                  src={post.image}
                   alt={post.title}
                   width={804}
                   height={452}
@@ -67,12 +50,12 @@ export default async function BlogPage() {
               {post.description && (
                 <p className="text-muted-foreground">{post.description}</p>
               )}
-              {post.publishedAt && (
+              {post.date && (
                 <p className="text-sm text-muted-foreground">
-                  {formatDate(post.publishedAt)}
+                  {formatDate(post.date)}
                 </p>
               )}
-              <Link href={`/blog/${post.slug}`} className="absolute inset-0">
+              <Link href={post.slug} className="absolute inset-0">
                 <span className="sr-only">View Article</span>
               </Link>
             </article>
