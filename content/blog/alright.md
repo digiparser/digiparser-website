@@ -7,26 +7,25 @@ author:
 slug: 'alright'
 description: 'How to implement preview mode in your headless CMS.'
 coverImage: '/images/blog-post-1-A4MD.webp'
-tags: ''
+tags: [{"label":"automation","value":"automation"}]
 publishedAt: '2024-03-04T19:27:34.457Z'
 ---
 
-<Callout>
-  The text below is from the [Tailwind
-  CSS](https://play.tailwindcss.com/uj1vGACRJA?layout=preview) docs. I copied it
-  here to test the markdown styles. **Tailwind is awesome. You should use it.**
-</Callout>
+&lt;Callout&gt; The text below is from the [Tailwind CSS](https://play.tailwindcss.com/uj1vGACRJA?layout=preview) docs. I copied it here to test the markdown styles. **Tailwind is awesome. You should use it.** &lt;/Callout&gt;
+
+Let's put another react component here and see if it works:
+
+&lt;Callout&gt;Alright this looks like a new component....&lt;/Callout&gt;
 
 Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
 
-By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
+By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you *really are* just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
 
 We get lots of complaints about it actually, with people regularly asking us things like:
 
-> Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?
-> We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look _awesome_, not awful.
+> Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too? We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look *awesome*, not awful.
 
-The `@tailwindcss/typography` plugin is our attempt to give you what you _actually_ want, without any of the downsides of doing something stupid like disabling our base styles.
+The `@tailwindcss/typography` plugin is our attempt to give you what you *actually* want, without any of the downsides of doing something stupid like disabling our base styles.
 
 It adds a new `prose` class that you can slap on any block of vanilla HTML content and turn it into a beautiful, well-formatted document:
 
@@ -52,13 +51,13 @@ For more information about how to use the plugin and the features it includes, [
 
 ## What to expect from here on out
 
-What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like **bold text**, unordered lists, ordered lists, code blocks, block quotes, _and even italics_.
+What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like **bold text**, unordered lists, ordered lists, code blocks, block quotes, *and even italics*.
 
 It's important to cover all of these use cases for a few reasons:
 
-1.  We want everything to look good out of the box.
-2.  Really just the first reason, that's the whole point of the plugin.
-3.  Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
+1. We want everything to look good out of the box.
+2. Really just the first reason, that's the whole point of the plugin.
+3. Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
 
 Now we're going to try out another header style.
 
@@ -72,12 +71,7 @@ Something a wise person once told me about typography is:
 
 It's probably important that images look okay here by default as well:
 
-<Image
-src="/images/blog/blog-post-4.jpg"
-width="718"
-height="404"
-alt="Image"
-/>
+&lt;Image src="/images/blog/blog-post-4.jpg" width="718" height="404" alt="Image" /&gt;
 
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
 
@@ -117,7 +111,7 @@ After this sort of list I usually have a closing statement or paragraph, because
 
 ## Code should look okay by default.
 
-I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look _okay_ out of the box, even with no syntax highlighting.
+I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look *okay* out of the box, even with no syntax highlighting.
 
 Here's what a default `tailwind.config.js` file looks like at the time of writing:
 
@@ -138,18 +132,18 @@ Hopefully that looks good enough to you.
 
 Nested lists basically always look bad which is why editors like Medium don't even let you do it, but I guess since some of you goofballs are going to do it we have to carry the burden of at least making it work.
 
-1.  **Nested lists are rarely a good idea.**
-    - You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
-    - Nested navigation in UIs is a bad idea too, keep things as flat as possible.
-    - Nesting tons of folders in your source code is also not helpful.
-2.  **Since we need to have more items, here's another one.**
-    - I'm not sure if we'll bother styling more than two levels deep.
-    - Two is already too much, three is guaranteed to be a bad idea.
-    - If you nest four levels deep you belong in prison.
-3.  **Two items isn't really a list, three is good though.**
-    - Again please don't nest lists if you want people to actually read your content.
-    - Nobody wants to look at this.
-    - I'm upset that we even have to bother styling this.
+1. **Nested lists are rarely a good idea.**
+   - You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
+   - Nested navigation in UIs is a bad idea too, keep things as flat as possible.
+   - Nesting tons of folders in your source code is also not helpful.
+2. **Since we need to have more items, here's another one.**
+   - I'm not sure if we'll bother styling more than two levels deep.
+   - Two is already too much, three is guaranteed to be a bad idea.
+   - If you nest four levels deep you belong in prison.
+3. **Two items isn't really a list, three is good though.**
+   - Again please don't nest lists if you want people to actually read your content.
+   - Nobody wants to look at this.
+   - I'm upset that we even have to bother styling this.
 
 The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
 
@@ -157,18 +151,18 @@ The most annoying thing about lists in Markdown is that `<li>` elements aren't g
 
   But this time with a second paragraph.
 
-    - These list items won't have `<p>` tags
-    - Because they are only one line each
+  - These list items won't have `<p>` tags
+  - Because they are only one line each
 
 - **But in this second top-level list item, they will.**
 
   This is especially annoying because of the spacing on this paragraph.
 
-    - As you can see here, because I've added a second line, this list item now has a `<p>` tag.
+  - As you can see here, because I've added a second line, this list item now has a `<p>` tag.
 
-      This is the second line I'm talking about by the way.
+    This is the second line I'm talking about by the way.
 
-    - Finally here's another list item so it's more like a list.
+  - Finally here's another list item so it's more like a list.
 
 - A closing list item, but with no nested list, because why not?
 
@@ -180,27 +174,21 @@ I almost forgot to mention links, like [this link to the Tailwind CSS website](h
 
 We even included table styles, check it out:
 
-| Wrestler                | Origin       | Finisher           |
-| ----------------------- | ------------ | ------------------ |
-| Bret "The Hitman" Hart  | Calgary, AB  | Sharpshooter       |
-| Stone Cold Steve Austin | Austin, TX   | Stone Cold Stunner |
-| Randy Savage            | Sarasota, FL | Elbow Drop         |
-| Vader                   | Boulder, CO  | Vader Bomb         |
-| Razor Ramon             | Chuluota, FL | Razor's Edge       |
+Wrestler Origin Finisher Bret "The Hitman" Hart Calgary, AB Sharpshooter Stone Cold Steve Austin Austin, TX Stone Cold Stunner Randy Savage Sarasota, FL Elbow Drop Vader Boulder, CO Vader Bomb Razor Ramon Chuluota, FL Razor's Edge
 
 We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
 
 ### Sometimes I even use `code` in headings
 
-Even though it's probably a bad idea, and historically I've had a hard time making it look good. This _"wrap the code blocks in backticks"_ trick works pretty well though really.
+Even though it's probably a bad idea, and historically I've had a hard time making it look good. This *"wrap the code blocks in backticks"* trick works pretty well though really.
 
-Another thing I've done in the past is put a `code` tag inside of a link, like if I wanted to tell you about the [`tailwindcss/docs`](https://github.com/tailwindcss/docs) repository. I don't love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.
+Another thing I've done in the past is put a `code` tag inside of a link, like if I wanted to tell you about the `tailwindcss/docs` repository. I don't love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.
 
 #### We haven't used an `h4` yet
 
 But now we have. Please don't use `h5` or `h6` in your content, Medium only supports two heading levels for a reason, you animals. I honestly considered using a `before` pseudo-element to scream at you if you use an `h5` or `h6`.
 
-We don't style them at all out of the box because `h4` elements are already so small that they are the same size as the body copy. What are we supposed to do with an `h5`, make it _smaller_ than the body copy? No thanks.
+We don't style them at all out of the box because `h4` elements are already so small that they are the same size as the body copy. What are we supposed to do with an `h5`, make it *smaller* than the body copy? No thanks.
 
 ### We still need to think about stacked headings though.
 
