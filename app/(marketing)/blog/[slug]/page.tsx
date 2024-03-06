@@ -92,7 +92,7 @@ export default async function Post(params: Params) {
                   className="flex items-center space-x-2 text-sm"
                 >
                   <Image
-                    src={author.avatar}
+                    src={author.picture}
                     alt={author.name}
                     width={42}
                     height={42}
