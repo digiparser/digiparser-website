@@ -12,6 +12,30 @@ import {VideoCameraIcon} from '@heroicons/react/24/outline';
 import { ChevronRightIcon } from "@radix-ui/react-icons";
 import SignUpFormReact from "@/components/waitlistForm";
 import FAQ from "@/components/dashboard/faq";
+import { siteConfig } from "@/config/site";
+
+export const metadata = {
+  title: "DigiParser - Extract data from documents and automate paperwork",
+  description: "An app that lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
+  openGraph: {
+    title: "DigiParser - Extract data from documents and automate paperwork",
+    description: "An app that lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "DigiParser - Extract data from documents and automate paperwork",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DigiParser - Extract data from documents and automate paperwork",
+    description: "An app that lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
+    images: [siteConfig.ogImage],
+  },
+}
 
 export default async function IndexPage() {
   return (
