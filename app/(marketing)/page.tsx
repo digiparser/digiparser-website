@@ -81,22 +81,22 @@ export default async function IndexPage() {
             className="flex animate-fade-up justify-center space-x-2 opacity-0 md:space-x-4"
             style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
           >
-            {/*<GetStartedButton />*/}
-            {/*<Link*/}
-            {/*  href={"/signin"}*/}
-            {/*  className={cn(*/}
-            {/*    buttonVariants({ variant: "outline", size: "lg" }),*/}
-            {/*    "px-4",*/}
-            {/*  )}*/}
-            {/*>*/}
-            {/*  <VideoCameraIcon className="mr-2 h-4 w-4" />*/}
-            {/*  <p>*/}
-            {/*    Watch{" "}*/}
-            {/*    <span className="hidden sm:inline-block">Demo</span>{" "}*/}
-            {/*    Video*/}
-            {/*  </p>*/}
-            {/*</Link>*/}
-            <SignUpFormReact />
+            <GetStartedButton />
+            {/* <Link
+              href={"/signin"}
+              className={cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "px-4",
+              )}
+            >
+              <VideoCameraIcon className="mr-2 h-4 w-4" />
+              <p>
+                Watch{" "}
+                <span className="hidden sm:inline-block">Demo</span>{" "}
+                Video
+              </p>
+            </Link> */}
+            {/* <SignUpFormReact /> */}
           </div>
         </div>
       </section>
