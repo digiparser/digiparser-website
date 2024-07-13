@@ -1,11 +1,11 @@
 {
-  "commit": "1f8e8114b3ea7f2b0bf91896f71187ec2c6eec2c",
-  "generated": "2024-03-06T06:53:47.603Z",
+  "commit": "242e31cccb5f4f6c9d7c2b41dc3cf7c85ddb95d0",
+  "generated": "2024-07-13T02:33:09.587Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "1f8e8114b3ea7f2b0bf91896f71187ec2c6eec2c",
-        "hash": "2726747702",
+        "commit": "242e31cccb5f4f6c9d7c2b41dc3cf7c85ddb95d0",
+        "hash": "1863500741",
         "path": "content/blog/alright.md"
       },
       "author": {

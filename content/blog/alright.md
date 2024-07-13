@@ -11,6 +11,9 @@ tags: [{"label":"automation","value":"automation"}]
 publishedAt: '2024-03-04T19:27:34.457Z'
 ---
 
+
+![](/images/gaudmire--1---1--kzMj.png)
+
 &lt;Callout&gt; The text below is from the [Tailwind CSS](https://play.tailwindcss.com/uj1vGACRJA?layout=preview) docs. I copied it here to test the markdown styles. **Tailwind is awesome. You should use it.** &lt;/Callout&gt;
 
 Let's put another react component here and see if it works:
