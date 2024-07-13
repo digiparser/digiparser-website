@@ -12,32 +12,32 @@ import {
 
 const features = [
   {
-    "name": "Pre-trained and Custom Models",
+    "name": "Pre-trained and custom models",
     "description": "Harness the power of artificial intelligence to intelligently extract and interpret data from documents, ensuring accurate and efficient data extraction.",
     icon: AdjustmentsHorizontalIcon,
   },
   {
-    "name": "Industry-Specific Templates",
+    "name": "Industry-specific templates",
     "description": "Accelerate setup with ready-to-use templates tailored for specific industries, streamlining the data extraction process for documents commonly used in your business sector.",
     icon: CircleStackIcon,
   },
   {
-    "name": "Workflow Builder and Integrations",
+    "name": "Workflow builder and integrations",
     "description": "Design and customize intricate document processing workflows effortlessly, automating complex tasks and optimizing the overall efficiency of your data extraction processes.",
     icon: PuzzlePieceIcon,
   },
   {
-    "name": "Extensive Document Format Support",
+    "name": "Extensive document format support",
     "description": "Parse documents in a wide array of formats, including PDFs, emails, images, and more, ensuring flexibility and adaptability to diverse document sources.",
     icon: DocumentDuplicateIcon,
   },
   {
-    "name": "User-Friendly API",
+    "name": "User-friendly API",
     "description": "Empower developers with a user-friendly API, simplifying integration with parsers and workflows, and facilitating seamless communication between your SaaS solution and external applications.",
     icon: LinkIcon,
   },
   {
-    "name": "Enterprise Friendly",
+    "name": "Enterprise friendly",
     "description": "Tailored for enterprise needs, our solution ensures scalability, security, and compliance, making it an ideal choice for businesses with demanding data extraction requirements.",
     icon: ShieldCheckIcon,
   },
@@ -59,7 +59,7 @@ const CallToActionComponent = () => {
             className="animate-fade-up font-urban text-3xl font-extrabold tracking-tight opacity-0 sm:text-4xl md:text-5xl lg:text-6xl"
             style={{animationDelay: "0.25s", animationFillMode: "forwards"}}
           >
-            <Balancer>OCR on Steroids</Balancer>
+            <Balancer>OCR on steroids</Balancer>
           </h1>
 
           <p

@@ -60,11 +60,19 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
             <Balancer>
-              Automate Document Workflows{" "}
+              {/* Extract data from documents and automate paperwork */}
+
+              Extract data from documents and{" "}
               <span className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
+                automate
+              </span>
+              {" "}paperwork
+
+              {/* Automate Document Workflows{" "} */}
+              {/* <span className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
                 in&nbsp;Minutes
               </span>
-              {" "}with No-Code
+              {" "}with No-Code */}
             </Balancer>
           </h1>
 
@@ -73,6 +81,7 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
           >
             <Balancer>
+
               Extract data from any document with our AI powered OCR models, and automate business processes with simple no-code workflow builder.
             </Balancer>
           </p>

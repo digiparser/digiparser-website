@@ -16,7 +16,7 @@ export default function Featuressection() {
             className="animate-fade-up font-urban text-3xl font-extrabold tracking-tight opacity-0 sm:text-4xl md:text-5xl lg:text-6xl"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
-            <Balancer>Integrates with Every Tool You Use</Balancer>
+            <Balancer>Integrates with every tool you use</Balancer>
           </h1>
 
           <p

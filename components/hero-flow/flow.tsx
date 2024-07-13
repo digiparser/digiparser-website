@@ -120,10 +120,10 @@ const ParserDescription = () => {
         <h3 className="text-sm font-semibold whitespace-nowrap leading-none tracking-tight">DigiParser AI</h3>
       </div>
       <div className="p-1">
-        <p className="text-xs/relaxed">- Data Capture with OCR</p>
-        <p className="text-xs/relaxed">- Doc Classification</p>
-        <p className="text-xs/relaxed">- Data Extraction</p>
-        <p className="text-xs/relaxed">- Template Based Extraction</p>
+        <p className="text-xs/relaxed">- Data capture with OCR</p>
+        <p className="text-xs/relaxed">- Doc classification</p>
+        <p className="text-xs/relaxed">- Data extraction</p>
+        <p className="text-xs/relaxed">- Template based extraction</p>
       </div>
     </div>
   );
@@ -135,13 +135,13 @@ const PreProcessingDescription = () => {
       className="w-[120px] absolute left-[50%] translate-x-[-50%] top-[140%] rounded-sm border bg-background text-card-foreground shadow-sm group-hover:block"
       data-v0-t="card">
       <div className="flex flex-col space-y-1.5 p-1 pb-0">
-        <h3 className="text-sm font-semibold whitespace-nowrap leading-none tracking-tight">Pre Processing</h3>
+        <h3 className="text-sm font-semibold whitespace-nowrap leading-none tracking-tight">Pre processing</h3>
       </div>
       <div className="p-1">
-        <p className="text-xs/relaxed">- Filter Documents</p>
-        <p className="text-xs/relaxed">- Filter Emails</p>
-        <p className="text-xs/relaxed">- Image Auto-crop</p>
-        <p className="text-xs/relaxed">- Noise Reduction</p>
+        <p className="text-xs/relaxed">- Filter documents</p>
+        <p className="text-xs/relaxed">- Filter emails</p>
+        <p className="text-xs/relaxed">- Image auto-crop</p>
+        <p className="text-xs/relaxed">- Noise reduction</p>
       </div>
     </div>
   );
@@ -153,13 +153,13 @@ const PostProcessingDescription = () => {
       className="w-[130px] absolute left-[50%] translate-x-[-50%] top-[140%] rounded-sm border bg-background text-card-foreground shadow-sm group-hover:block"
       data-v0-t="card">
       <div className="flex flex-col space-y-1.5 p-1 pb-0">
-        <h3 className="text-sm font-semibold whitespace-nowrap leading-none tracking-tight">Post Processing</h3>
+        <h3 className="text-sm font-semibold whitespace-nowrap leading-none tracking-tight">Post processing</h3>
       </div>
       <div className="p-1">
-        <p className="text-xs/relaxed">- Data Validation</p>
-        <p className="text-xs/relaxed">- Enhance Data</p>
+        <p className="text-xs/relaxed">- Data validation</p>
+        <p className="text-xs/relaxed">- Enhance data</p>
         <p className="text-xs/relaxed">- Data lookup in DB</p>
-        <p className="text-xs/relaxed">- Math Operations</p>
+        <p className="text-xs/relaxed">- Math operations</p>
       </div>
     </div>
   );
@@ -174,10 +174,10 @@ const ReviewerDescription = () => {
         <h3 className="text-sm font-semibold whitespace-nowrap leading-none tracking-tight">Human-in-the-loop</h3>
       </div>
       <div className="p-1">
-        <p className="text-xs/relaxed">- Confidence Based Rules</p>
-        <p className="text-xs/relaxed">- Human Verification</p>
+        <p className="text-xs/relaxed">- Confidence based rules</p>
+        <p className="text-xs/relaxed">- Human verification</p>
         <p className="text-xs/relaxed">- Review in Slack</p>
-        <p className="text-xs/relaxed">- Manually Modify Data</p>
+        <p className="text-xs/relaxed">- Manually modify data</p>
       </div>
     </div>
   );
@@ -226,14 +226,14 @@ const initialEdges = [
   {id: 'preProcessing-aiParser', source: 'preProcessing', target: 'aiParser', data: {label: 'Filtered documents'}, ...defaultEdgeOptions},
   {id: 'aiParser-description', source: 'aiParser', target: 'aiParserDescription', ...descriptionEdgeOptions, sourceHandle: 'bottomParser'},
 
-  {id: 'aiParser-postProcessing', source: 'aiParser', target: 'postProcessing', data: {label: 'Extracted Data'}, ...defaultEdgeOptions},
+  {id: 'aiParser-postProcessing', source: 'aiParser', target: 'postProcessing', data: {label: 'Extracted data'}, ...defaultEdgeOptions},
   {id: 'postProcessing-description', source: 'postProcessing', target: 'postProcessingDescription', ...descriptionEdgeOptions, sourceHandle: 'bottomPost'},
 
-  {id: 'postProcessing-reviewer', source: 'postProcessing', target: 'reviewer', data: {label: 'Structured Data'}, ...defaultEdgeOptions},
+  {id: 'postProcessing-reviewer', source: 'postProcessing', target: 'reviewer', data: {label: 'Structured data'}, ...defaultEdgeOptions},
   {id: 'reviewer-description', source: 'reviewer', target: 'reviewerDescription', ...descriptionEdgeOptions, sourceHandle: 'bottomReviewer'},
 
   {id: 'reviewer-excel', source: 'reviewer', target: 'outputExcel', data: {label: 'Export to Excel'}, ...defaultEdgeOptions},
-  {id: 'reviewer-webhook', source: 'reviewer', target: 'outputWebhook', data: {label: 'Send to Webhook'}, ...defaultEdgeOptions},
+  {id: 'reviewer-webhook', source: 'reviewer', target: 'outputWebhook', data: {label: 'Send to webhook'}, ...defaultEdgeOptions},
   {id: 'reviewer-salesforce', source: 'reviewer', target: 'outputSalesforce', data: {label: 'Export to Salesforce'}, ...defaultEdgeOptions},
   {id: 'reviewer-quickbooks', source: 'reviewer', target: 'outputQuickbooks', data: {label: 'Export to Quickbooks'}, ...defaultEdgeOptions},
 ];
@@ -284,7 +284,7 @@ function Flow({className}: FlowProps) {
     {
       id: 'preProcessing',
       type: 'preProcessing',
-      data: {label: 'Pre Processing', icon: PreProcessingIcon},
+      data: {label: 'Pre processing', icon: PreProcessingIcon},
       position: {x: availableWidth * 0.2, y: 145},
       sourcePosition: Position.Right,
       targetPosition: Position.Left,
@@ -326,7 +326,7 @@ function Flow({className}: FlowProps) {
     {
       id: 'postProcessing',
       type: 'postProcessing',
-      data: {label: 'Post Processing', icon: PostProcessingIcon},
+      data: {label: 'Post processing', icon: PostProcessingIcon},
       position: {x: availableWidth * 0.55, y: 210},
       sourcePosition: Position.Right,
       targetPosition: Position.Left,

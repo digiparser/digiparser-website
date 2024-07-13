@@ -106,6 +106,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
           </Link>
         </div>
       </div>
+      {guide.body.raw}
       <div className="hidden text-sm lg:block">
         <div className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10">
           <DashboardTableOfContents toc={toc} />

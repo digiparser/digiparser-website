@@ -10,6 +10,8 @@ import { Icons } from "@/components/icons";
 import { Mdx } from "@/components/mdx-components";
 import { allBlogs } from "contentlayer/generated";
 import "@/styles/mdx.css"
+import { getTableOfContents } from '@/lib/toc'
+import { DashboardTableOfContents } from '@/components/toc'
 
 type Post = {
   tags: { value: string; label: string }[]
@@ -58,19 +60,28 @@ export default async function Post(params: Params) {
   const post: any = await getData(params)
   const author: any = post?.author;
   
+  const toc = await getTableOfContents(post.markdownContent);
+
   return (
-    <div>
-      <article className="container relative max-w-3xl py-6 lg:py-10">
+    <div className='flex justify-start container relative py-6 lg:py-10'>
+      <div className='w-96 p-4 pt-10 mr-8 sticky top-0 mb-auto hidden lg:block'>
         <Link
           href="/blog"
           className={cn(
-            buttonVariants({variant: "ghost"}),
-            "absolute left-[-200px] top-14 hidden xl:inline-flex"
+            buttonVariants({ variant: "ghost" }),
+            "hidden xl:inline-flex"
           )}
         >
-          <Icons.chevronLeft className="mr-2 h-4 w-4"/>
+          <Icons.chevronLeft className="mr-2 h-4 w-4" />
           See all posts
         </Link>
+        <div className="hidden text-sm lg:block">
+          <div className="px-4 py-10">
+            <DashboardTableOfContents toc={toc} />
+          </div>
+        </div>
+      </div>
+      <article className="max-w-3xl">
         <div>
           {post.publishedAt && (
             <time
@@ -159,11 +170,14 @@ async function getData({params}: Params) {
     notFound()
   }
 
+  const markdownContent = post.content;
+
   const content = await markdownToHtml(post.content)
 
   return {
     ...post,
-    content
+    content,
+    markdownContent,
   }
 }
 

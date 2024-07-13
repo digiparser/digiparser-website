@@ -16,7 +16,7 @@ export function GetStartedButton() {
           // onClick={handleOnClick}
           href={'https://app.digiparser.com/auth/join'}
         >
-          Get Started for FREE
+          Get started for free
         </Link>
       </div>
       <small>no cc required</small>
