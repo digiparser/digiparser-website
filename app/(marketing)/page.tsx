@@ -13,6 +13,7 @@ import { ChevronRightIcon } from "@radix-ui/react-icons";
 import SignUpFormReact from "@/components/waitlistForm";
 import FAQ from "@/components/dashboard/faq";
 import { siteConfig } from "@/config/site";
+import { FlipWords } from "@/components/ui/flip-words";
 
 export const metadata = {
   title: "DigiParser - Extract data from documents and automate paperwork",
@@ -38,6 +39,18 @@ export const metadata = {
 }
 
 export default async function IndexPage() {
+
+  const words = [
+    'invoices', 
+    'payslips', 
+    'resumes', 
+    'contracts',
+    'bank statements', 
+    'passport', 
+    'driving license',
+    'any document',
+  ];
+
   return (
     <>
       <section id={'waitlist'} className="space-y-6 pb-12 pt-16 lg:py-28">
@@ -51,29 +64,19 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
             target="_blank"
           >
-            Whitelabel support coming soon for agencies
+            {/* Whitelabel support coming soon for agencies */}
             {/*<ChevronRightIcon className="ml-2 h-4 w-4" />*/}
+            Automate document workflows in minutes
           </Link>
 
           <h1
             className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
-            <Balancer>
-              {/* Extract data from documents and automate paperwork */}
-
-              Extract data from documents and{" "}
-              <span className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
-                automate
-              </span>
-              {" "}paperwork
-
-              {/* Automate Document Workflows{" "} */}
-              {/* <span className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
-                in&nbsp;Minutes
-              </span>
-              {" "}with No-Code */}
-            </Balancer>
+            Parse{" "}
+            <FlipWords words={words} />
+            <br/>
+            {" "} and automate paperwork
           </h1>
 
           <p
@@ -81,7 +84,6 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
           >
             <Balancer>
-
               Extract data from any document with our AI powered OCR models, and automate business processes with simple no-code workflow builder.
             </Balancer>
           </p>
