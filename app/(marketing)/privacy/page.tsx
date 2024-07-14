@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
             </h1>
           </div>
         </div>
-        <div className="max-w-5xl mx-auto mt-12">
+        <div className="max-w-5xl mx-auto mt-12 prose prose-lg dark:prose-invert">
           <>
             <p>Last updated: July 14, 2024</p>
             <p>
