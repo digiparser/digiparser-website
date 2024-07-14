@@ -74,7 +74,7 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
             Parse{" "}
-            <FlipWords words={words} />
+            <FlipWords words={words} duration={2000} />
             <br/>
             {" "} and automate paperwork
           </h1>
