@@ -2,9 +2,8 @@ import * as React from "react"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
-import { ModeToggle } from "@/components/mode-toggle"
 import Image from "next/image";
+import Link from "next/link";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
@@ -24,6 +23,20 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             2023-{new Date().getFullYear()} {siteConfig.name}</div>
         </div>
       </div>
+      <p className="text-center text-sm mb-8">
+        <Link
+          href={'/privacy'}
+          className="font-medium underline underline-offset-4 mx-2"
+        >
+          Privacy policy
+        </Link>
+        <Link
+          href={'/terms'}
+          className="font-medium underline underline-offset-4 mx-2"
+        >
+          Terms and conditions
+        </Link>
+      </p>
     </footer>
   )
 }
