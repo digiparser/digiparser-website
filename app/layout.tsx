@@ -14,6 +14,7 @@ import { Analytics } from "@/components/analytics"
 import { ThemeProvider } from "@/components/theme-provider"
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { PHProvider } from '@/components/ph-provider';
+import Script from 'next/script';
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -102,6 +103,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </body>
       </PHProvider>
       <GoogleAnalytics gaId="G-JTZGZ6TFJ7" />
+      <Script
+        strategy="lazyOnload"
+        src="https://embed.tawk.to/66a5df7ebecc2fed692c0fe2/1i3rv21td"
+      />
     </html>
   )
 }
