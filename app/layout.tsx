@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Inter as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 
@@ -97,6 +98,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <TailwindIndicator />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-JTZGZ6TFJ7" />
     </html>
   )
 }
