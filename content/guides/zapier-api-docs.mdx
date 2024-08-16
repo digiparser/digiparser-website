@@ -1,0 +1,135 @@
+---
+title: API Documentation.
+description: Zapier only API documentation
+date: 2024-08-16
+published: false
+---
+
+# Zapier API Documentation
+
+## Overview
+This document provides details about the Zapier Import and Export APIs for integrating with our application. 
+The APIs allow users to import documents and export workflows via webhooks.
+
+## Base URL
+```
+https://app.digiparser.com/api/v1/zapier
+```
+
+## Authentication
+All requests require an API key to authenticate. Include the API key in the request headers:
+```
+X-KEY: YOUR_DIGIPARSER_API_KEY
+```
+
+## Import API
+
+### Endpoint
+```
+POST /import
+```
+
+### Request
+#### Headers
+- `Content-Type: multipart/form-data`
+
+#### Body
+- `import_parser` (string, required): The ID of the parser to use for the import.
+- `file_name` (string, optional): The name of the file being uploaded.
+- `async` (boolean, optional): Whether to process the import asynchronously.
+- `file` (file, optional): The file to upload.
+- `file_url` (string, optional): A URL to fetch the file from.
+
+### Response
+#### Success
+- **Status Code**: 200
+- **Body**: 
+```json
+{
+  "result": [
+    {
+      "id": "document_id",
+      "name": "document_name",
+      "url": "document_url",
+      "isProcessed": true,
+      "data": [], // includes extracted entities for the document in key-value pairs
+      "rawData": [] // includes extracted entities in object format
+    }
+  ]
+}
+```
+
+#### Error
+- **Status Code**: 400 or 404
+- **Body**: 
+```json
+{
+  "error": "Error message"
+}
+```
+
+## Export API
+
+### Endpoint
+```
+POST /export
+```
+
+### Request
+#### Headers
+- `Content-Type: application/json`
+
+#### Body
+- `parser` (string, required): The ID of the parser to use for the export.
+- `hookUrl` (string, optional): The URL to send webhook notifications.
+- `hookUrlId` (string, optional): The ID of the webhook to unsubscribe.
+- `subscribe` (boolean, optional): Whether to subscribe to the webhook.
+- `unsubscribe` (boolean, optional): Whether to unsubscribe from the webhook.
+- `getSampleData` (boolean, optional): Whether to retrieve sample data.
+
+### Response
+#### Success
+- **Status Code**: 200
+- **Body**: 
+```json
+{
+  "id": "new_hook_id" // for subscribe
+}
+```
+or
+```json
+{
+  "success": true // for unsubscribe
+}
+```
+or
+```json
+[
+  {
+    "id": "document_id",
+    "name": "document_name",
+    "url": "document_url",
+    "isProcessed": true,
+    "assignee": "assignee_name",
+    "data": [], // includes extracted entities for the document in key-value pairs
+    "rawData": [] // includes extracted entities in object format
+  }
+]
+```
+
+#### Error
+- **Status Code**: 400 or 404 or 405
+- **Body**: 
+```json
+{
+  "error": "Error message"
+}
+```
+
+## Notes
+- Ensure that the API key is valid and has the necessary permissions.
+- The import API supports both file uploads and file URLs.
+- The export API allows subscribing and unsubscribing from webhooks for real-time updates.
+
+## Conclusion
+This documentation outlines the necessary details for integrating with the Zapier Import and Export APIs. For further assistance, please contact our support team.
