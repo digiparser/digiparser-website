@@ -1,19 +1,19 @@
 {
   "commit": "208d8d58bc023822e9436afea689072b4989e020",
-  "generated": "2024-08-17T12:03:13.202Z",
+  "generated": "2024-08-17T13:14:37.837Z",
   "metadata": [
     {
       "__outstatic": {
         "commit": "208d8d58bc023822e9436afea689072b4989e020",
-        "hash": "2813136918",
+        "hash": "2994613152",
         "path": "content/blog/extract-text-from-an-image-step-by-step-guide.md"
       },
       "author": {
         "name": "Unnati Patidar",
-        "picture": "/images/297432365_417149327112355_8118156959695159779_n-cyMz.jpg"
+        "picture": "/images/297432365_417149327112355_8118156959695159779_n-IxOD.jpg"
       },
       "collection": "blog",
-      "coverImage": "",
+      "coverImage": "/images/mockuuups-ipad-air-mockup-on-a-white-slab--1--AyND.jpeg",
       "description": "",
       "publishedAt": "2024-08-17T12:03:36.195Z",
       "slug": "extract-text-from-an-image-step-by-step-guide",
