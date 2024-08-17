@@ -6,11 +6,10 @@ author:
   picture: '/images/297432365_417149327112355_8118156959695159779_n-E5OD.jpg'
 slug: 'extract-text-from-an-image-step-by-step-guide'
 description: ''
-coverImage: '/images/mockuuups-ipad-air-mockup-on-a-white-slab--1--gzMz.jpeg'
+coverImage: '/images/screenshot-2024-08-17-at-6.30.05-pm-YwMT.png'
 tags: []
 publishedAt: '2024-08-17T12:03:36.195Z'
 ---
-
 
 ## **Introduction**
 
