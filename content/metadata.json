@@ -1,27 +1,7 @@
 {
-  "commit": "dc47f8196b8005993c54f4b58a58b2b821636a69",
-  "generated": "2024-08-17T13:50:43.673Z",
+  "commit": "22645622961aca83285c84776a9e3f3c10583da8",
+  "generated": "2024-08-17T14:00:12.876Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "691055ecc3da8a647790d4c33bf7f0345414b11a",
-        "hash": "407795917",
-        "path": "content/blog/extract-text-from-an-image-step-by-step-guide.md"
-      },
-      "author": {
-        "name": "Unnati Patidar",
-        "picture": "/images/297432365_417149327112355_8118156959695159779_n-E5OD.jpg"
-      },
-      "collection": "blog",
-      "coverImage": "/images/screenshot-2024-08-17-at-6.30.05-pm-YwMT.png",
-      "description": "",
-      "publishedAt": "2024-08-17T12:03:36.195Z",
-      "slug": "extract-text-from-an-image-step-by-step-guide",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "Extract Text From an Image: Step-by-Step Guide"
-    },
     {
       "__outstatic": {
         "commit": "dc47f8196b8005993c54f4b58a58b2b821636a69",
@@ -41,6 +21,28 @@
       "tags": [
       ],
       "title": "How Document Workflow Automation Revolutionizes Business Processes"
+    },
+    {
+      "__outstatic": {
+        "commit": "22645622961aca83285c84776a9e3f3c10583da8",
+        "hash": "1715423350",
+        "path": "content/blog/extract-text-from-an-image-step-by-step-guide.md"
+      },
+      "author": {
+        "name": "Unnati Patidar",
+        "picture": "/images/297432365_417149327112355_8118156959695159779_n-E5OD.jpg"
+      },
+      "authorLink": "https://www.linkedin.com/in/unnati-patidar-644034184",
+      "authorUsername": "unnati-patidar",
+      "collection": "blog",
+      "coverImage": "/images/screenshot-2024-08-17-at-6.30.05-pm-YwMT.png",
+      "description": "",
+      "publishedAt": "2024-08-17T12:03:36.195Z",
+      "slug": "extract-text-from-an-image-step-by-step-guide",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "Extract Text From an Image: Step-by-Step Guide"
     }
   ]
 }

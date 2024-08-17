@@ -8,6 +8,8 @@ slug: 'extract-text-from-an-image-step-by-step-guide'
 description: ''
 coverImage: '/images/screenshot-2024-08-17-at-6.30.05-pm-YwMT.png'
 tags: []
+authorLink: 'https://www.linkedin.com/in/unnati-patidar-644034184'
+authorUsername: 'unnati-patidar'
 publishedAt: '2024-08-17T12:03:36.195Z'
 ---
 
