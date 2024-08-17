@@ -14,6 +14,13 @@
           "label": "automation"
         }
       ]
+    },
+    "authorLink": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Author link"
     }
   }
 }
