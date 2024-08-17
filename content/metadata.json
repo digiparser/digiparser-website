@@ -1,16 +1,16 @@
 {
-  "commit": "366a8a241ee24d71e3a53b51071b844d62be9817",
-  "generated": "2024-08-17T11:53:26.358Z",
+  "commit": "208d8d58bc023822e9436afea689072b4989e020",
+  "generated": "2024-08-17T12:02:23.372Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "725736a02b57922896d987f60c859619a5597687",
-        "hash": "2193998167",
+        "commit": "208d8d58bc023822e9436afea689072b4989e020",
+        "hash": "1025809563",
         "path": "content/blog/extract-text-from-an-image-step-by-step-guide.md"
       },
       "author": {
         "name": "Unnati Patidar",
-        "picture": ""
+        "picture": "/images/297432365_417149327112355_8118156959695159779_n-g2Mj.jpg"
       },
       "collection": "blog",
       "coverImage": "",

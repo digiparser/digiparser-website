@@ -3,7 +3,7 @@ title: 'Extract Text From an Image: Step-by-Step Guide'
 status: 'published'
 author:
   name: 'Unnati Patidar'
-  picture: ''
+  picture: '/images/297432365_417149327112355_8118156959695159779_n-g2Mj.jpg'
 slug: 'extract-text-from-an-image-step-by-step-guide'
 description: ''
 coverImage: ''
