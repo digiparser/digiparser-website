@@ -1,31 +1,7 @@
 {
-  "commit": "725736a02b57922896d987f60c859619a5597687",
-  "generated": "2024-08-17T11:52:51.338Z",
+  "commit": "366a8a241ee24d71e3a53b51071b844d62be9817",
+  "generated": "2024-08-17T11:53:26.358Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "242e31cccb5f4f6c9d7c2b41dc3cf7c85ddb95d0",
-        "hash": "1863500741",
-        "path": "content/blog/alright.md"
-      },
-      "author": {
-        "name": "pan",
-        "picture": "/images/the_turtle_avatar-c5OD.jpg"
-      },
-      "collection": "blog",
-      "coverImage": "/images/blog-post-1-A4MD.webp",
-      "description": "How to implement preview mode in your headless CMS.",
-      "publishedAt": "2024-03-04T19:27:34.457Z",
-      "slug": "alright",
-      "status": "published",
-      "tags": [
-        {
-          "label": "automation",
-          "value": "automation"
-        }
-      ],
-      "title": "Preview Mode for Headless CMS"
-    },
     {
       "__outstatic": {
         "commit": "725736a02b57922896d987f60c859619a5597687",
