@@ -1,6 +1,6 @@
 ---
 title: 'How Document Workflow Automation Revolutionizes Business Processes'
-status: 'published'
+status: 'draft'
 author:
   name: 'Pankaj Patidar'
   picture: '/images/x-profile-avatar-Q5OD.jpg'
