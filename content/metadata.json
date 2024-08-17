@@ -1,6 +1,6 @@
 {
-  "commit": "3a399e7368b261e4f5381c672b2749e867137700",
-  "generated": "2024-08-17T13:24:44.005Z",
+  "commit": "2ac469d712ee80624873d25e2021f469ba03d004",
+  "generated": "2024-08-17T13:35:23.996Z",
   "metadata": [
     {
       "__outstatic": {
@@ -24,8 +24,8 @@
     },
     {
       "__outstatic": {
-        "commit": "3a399e7368b261e4f5381c672b2749e867137700",
-        "hash": "2566943007",
+        "commit": "2ac469d712ee80624873d25e2021f469ba03d004",
+        "hash": "1467765526",
         "path": "content/blog/the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes.md"
       },
       "author": {
@@ -33,7 +33,7 @@
         "picture": "/images/x-profile-avatar-Q5OD.jpg"
       },
       "collection": "blog",
-      "coverImage": "",
+      "coverImage": "/images/whatsapp-image-2024-08-17-at-6.57.05-pm--1--c4MD.jpeg",
       "description": "",
       "publishedAt": "2024-08-17T13:56:03.851Z",
       "slug": "the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes",

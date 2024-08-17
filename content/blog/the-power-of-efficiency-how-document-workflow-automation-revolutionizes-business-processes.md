@@ -6,8 +6,8 @@ author:
   picture: '/images/x-profile-avatar-Q5OD.jpg'
 slug: 'the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes'
 description: ''
-coverImage: ''
-tags: ''
+coverImage: '/images/whatsapp-image-2024-08-17-at-6.57.05-pm--1--c4MD.jpeg'
+tags: []
 publishedAt: '2024-08-17T13:56:03.851Z'
 ---
 
