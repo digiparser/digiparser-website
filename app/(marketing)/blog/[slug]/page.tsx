@@ -99,7 +99,7 @@ export default async function Post(params: Params) {
               <div className="mt-4 flex space-x-4">
                 <Link
                   key={author._id}
-                  href={`https://twitter.com/${author.name}`}
+                  href={post?.authorLink || ''}
                   className="flex items-center space-x-2 text-sm"
                 >
                   <Image
@@ -112,7 +112,7 @@ export default async function Post(params: Params) {
                   <div className="flex-1 text-left leading-tight">
                     <p className="font-medium">{author.name}</p>
                     <p className="text-[12px] text-muted-foreground">
-                      @{author.name}
+                      @{post?.authorUsername || ''}
                     </p>
                   </div>
                 </Link>
@@ -159,7 +159,9 @@ async function getData({params}: Params) {
       'author',
       'content',
       'coverImage',
-      'tags'
+      'tags',
+      'authorUsername',
+      'authorLink',
     ])
     .first()
 
