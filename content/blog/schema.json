@@ -14,13 +14,6 @@
           "label": "automation"
         }
       ]
-    },
-    "authorTwitter": {
-      "required": false,
-      "description": "",
-      "fieldType": "String",
-      "dataType": "string",
-      "title": "Author twitter"
     }
   }
 }
