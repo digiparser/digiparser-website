@@ -1,5 +1,5 @@
 ---
-title: 'The Power of Efficiency: How Document Workflow Automation Revolutionizes Business Processes'
+title: 'How Document Workflow Automation Revolutionizes Business Processes'
 status: 'published'
 author:
   name: 'Pankaj Patidar'

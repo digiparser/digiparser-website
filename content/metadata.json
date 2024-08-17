@@ -1,27 +1,7 @@
 {
-  "commit": "691055ecc3da8a647790d4c33bf7f0345414b11a",
-  "generated": "2024-08-17T13:35:52.344Z",
+  "commit": "2883892cac926cdb3de1a2e3c5d106473597c6ff",
+  "generated": "2024-08-17T13:42:15.139Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "2ac469d712ee80624873d25e2021f469ba03d004",
-        "hash": "1467765526",
-        "path": "content/blog/the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes.md"
-      },
-      "author": {
-        "name": "Pankaj Patidar",
-        "picture": "/images/x-profile-avatar-Q5OD.jpg"
-      },
-      "collection": "blog",
-      "coverImage": "/images/whatsapp-image-2024-08-17-at-6.57.05-pm--1--c4MD.jpeg",
-      "description": "",
-      "publishedAt": "2024-08-17T13:56:03.851Z",
-      "slug": "the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "The Power of Efficiency: How Document Workflow Automation Revolutionizes Business Processes"
-    },
     {
       "__outstatic": {
         "commit": "691055ecc3da8a647790d4c33bf7f0345414b11a",
@@ -41,6 +21,26 @@
       "tags": [
       ],
       "title": "Extract Text From an Image: Step-by-Step Guide"
+    },
+    {
+      "__outstatic": {
+        "commit": "2883892cac926cdb3de1a2e3c5d106473597c6ff",
+        "hash": "2777124734",
+        "path": "content/blog/the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes.md"
+      },
+      "author": {
+        "name": "Pankaj Patidar",
+        "picture": "/images/x-profile-avatar-Q5OD.jpg"
+      },
+      "collection": "blog",
+      "coverImage": "/images/whatsapp-image-2024-08-17-at-6.57.05-pm--1--c4MD.jpeg",
+      "description": "",
+      "publishedAt": "2024-08-17T13:56:03.851Z",
+      "slug": "the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "How Document Workflow Automation Revolutionizes Business Processes"
     }
   ]
 }
