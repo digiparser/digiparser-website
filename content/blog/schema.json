@@ -21,6 +21,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Author link"
+    },
+    "authorUsername": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Author username"
     }
   }
 }
