@@ -1,6 +1,6 @@
 {
-  "commit": "208d8d58bc023822e9436afea689072b4989e020",
-  "generated": "2024-08-17T13:15:04.246Z",
+  "commit": "3a399e7368b261e4f5381c672b2749e867137700",
+  "generated": "2024-08-17T13:24:44.005Z",
   "metadata": [
     {
       "__outstatic": {
@@ -21,6 +21,26 @@
       "tags": [
       ],
       "title": "Extract Text From an Image: Step-by-Step Guide"
+    },
+    {
+      "__outstatic": {
+        "commit": "3a399e7368b261e4f5381c672b2749e867137700",
+        "hash": "2566943007",
+        "path": "content/blog/the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes.md"
+      },
+      "author": {
+        "name": "Pankaj Patidar",
+        "picture": "/images/x-profile-avatar-Q5OD.jpg"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-08-17T13:56:03.851Z",
+      "slug": "the-power-of-efficiency-how-document-workflow-automation-revolutionizes-business-processes",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "The Power of Efficiency: How Document Workflow Automation Revolutionizes Business Processes"
     }
   ]
 }
