@@ -1,6 +1,6 @@
 {
-  "commit": "16a268f76f6ae0595639a4ba06576c706d45eafb",
-  "generated": "2024-08-17T11:52:04.818Z",
+  "commit": "725736a02b57922896d987f60c859619a5597687",
+  "generated": "2024-08-17T11:52:51.338Z",
   "metadata": [
     {
       "__outstatic": {
@@ -28,20 +28,20 @@
     },
     {
       "__outstatic": {
-        "commit": "16a268f76f6ae0595639a4ba06576c706d45eafb",
-        "hash": "784153796",
+        "commit": "725736a02b57922896d987f60c859619a5597687",
+        "hash": "2193998167",
         "path": "content/blog/extract-text-from-an-image-step-by-step-guide.md"
       },
       "author": {
-        "name": "Pankaj Patidar",
-        "picture": "https://avatars.githubusercontent.com/u/17493609?v=4"
+        "name": "Unnati Patidar",
+        "picture": ""
       },
       "collection": "blog",
       "coverImage": "",
       "description": "",
       "publishedAt": "2024-08-17T12:03:36.195Z",
       "slug": "extract-text-from-an-image-step-by-step-guide",
-      "status": "draft",
+      "status": "published",
       "tags": [
       ],
       "title": "Extract Text From an Image: Step-by-Step Guide"
