@@ -287,6 +287,14 @@ export default function TNC() {
               to the new terms, in whole or in part, please stop using the website and the
               Service.
             </p>
+            <h2>Cancellation Policy</h2>
+            <p>
+              You may cancel your subscription at any time without penalty. Upon cancellation, you will not be charged for the next billing cycle, and your access to the Service will continue until the end of the current billing period.
+            </p>
+            <h2>Refund Policy</h2>
+            <p>
+              We do not offer refunds for any payments made. This is due to the costs associated with running AI models and providing our services. Once a payment is processed, it is non-refundable, and we encourage you to review our services thoroughly before making a commitment.
+            </p>
             <h2>Contact Us</h2>
             <p>
               If you have any questions about these Terms and Conditions, You can contact
