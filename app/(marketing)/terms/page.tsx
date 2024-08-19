@@ -9,7 +9,7 @@ export default function TNC() {
             <h2 className="text-base font-semibold leading-7 text-indigo-600">
               <span
                 className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
-                DigiParser
+                DigiParser (Legal name: Patidar Consultancy)
               </span>
             </h2>
 
@@ -54,7 +54,7 @@ export default function TNC() {
               <li>
                 <p>
                   <strong>Company</strong> (referred to as either "the Company", "We",
-                  "Us" or "Our" in this Agreement) refers to DigiParser.
+                  "Us" or "Our" in this Agreement) refers to DigiParser (Legal name: Patidar Consultancy).
                 </p>
               </li>
               <li>
@@ -93,7 +93,7 @@ export default function TNC() {
               </li>
               <li>
                 <p>
-                  <strong>Website</strong> refers to DigiParser, accessible from{" "}
+                  <strong>Website</strong> refers to Patidar Consultancy, accessible from{" "}
                   <a
                     href="https://www.digiparser.com"
                     rel="external nofollow noopener"
@@ -114,7 +114,7 @@ export default function TNC() {
             <h2>Acknowledgment</h2>
             <p>
               These are the Terms and Conditions governing the use of this Service and the
-              agreement that operates between You and the Company. These Terms and
+              agreement that operates between You and DigiParser (Legal name: Patidar Consultancy). These Terms and
               Conditions set out the rights and obligations of all users regarding the use
               of the Service.
             </p>
@@ -129,12 +129,12 @@ export default function TNC() {
               You may not access the Service.
             </p>
             <p>
-              You represent that you are over the age of 18. The Company does not permit
+              You represent that you are over the age of 18. DigiParser (Legal name: Patidar Consultancy) does not permit
               those under 18 to use the Service.
             </p>
             <p>
               Your access to and use of the Service is also conditioned on Your acceptance
-              of and compliance with the Privacy Policy of the Company. Our Privacy Policy
+              of and compliance with the Privacy Policy of DigiParser (Legal name: Patidar Consultancy). Our Privacy Policy
               describes Our policies and procedures on the collection, use and disclosure
               of Your personal information when You use the Application or the Website and
               tells You about Your privacy rights and how the law protects You. Please
@@ -143,12 +143,12 @@ export default function TNC() {
             <h2>Links to Other Websites</h2>
             <p>
               Our Service may contain links to third-party web sites or services that are
-              not owned or controlled by the Company.
+              not owned or controlled by DigiParser (Legal name: Patidar Consultancy).
             </p>
             <p>
-              The Company has no control over, and assumes no responsibility for, the
+              DigiParser (Legal name: Patidar Consultancy) has no control over, and assumes no responsibility for, the
               content, privacy policies, or practices of any third party web sites or
-              services. You further acknowledge and agree that the Company shall not be
+              services. You further acknowledge and agree that DigiParser (Legal name: Patidar Consultancy) shall not be
               responsible or liable, directly or indirectly, for any damage or loss caused
               or alleged to be caused by or in connection with the use of or reliance on
               any such content, goods or services available on or through any such web
@@ -168,20 +168,19 @@ export default function TNC() {
             <h2>Limitation of Liability</h2>
             <p>
               Notwithstanding any damages that You might incur, the entire liability of
-              the Company and any of its suppliers under any provision of this Terms and
+              DigiParser (Legal name: Patidar Consultancy) and any of its suppliers under any provision of this Terms and
               Your exclusive remedy for all of the foregoing shall be limited to the
               amount actually paid by You through the Service or 100 USD if You haven't
               purchased anything through the Service.
             </p>
             <p>
-              To the maximum extent permitted by applicable law, in no event shall the
-              Company or its suppliers be liable for any special, incidental, indirect, or
-              consequential damages whatsoever (including, but not limited to, damages for
-              loss of profits, loss of data or other information, for business
-              interruption, for personal injury, loss of privacy arising out of or in any
-              way related to the use of or inability to use the Service, third-party
+              To the maximum extent permitted by applicable law, in no event shall DigiParser (Legal name: Patidar Consultancy) or its suppliers be
+              liable for any special, incidental, indirect, or consequential damages whatsoever
+              (including, but not limited to, damages for loss of profits, loss of data or other
+              information, for business interruption, for personal injury, loss of privacy arising
+              out of or in any way related to the use of or inability to use the Service, third-party
               software and/or third-party hardware used with the Service, or otherwise in
-              connection with any provision of this Terms), even if the Company or any
+              connection with any provision of this Terms), even if DigiParser (Legal name: Patidar Consultancy) or any
               supplier has been advised of the possibility of such damages and even if the
               remedy fails of its essential purpose.
             </p>
@@ -195,14 +194,14 @@ export default function TNC() {
             <p>
               The Service is provided to You "AS IS" and "AS AVAILABLE" and with all
               faults and defects without warranty of any kind. To the maximum extent
-              permitted under applicable law, the Company, on its own behalf and on behalf
+              permitted under applicable law, DigiParser (Legal name: Patidar Consultancy), on its own behalf and on behalf
               of its Affiliates and its and their respective licensors and service
               providers, expressly disclaims all warranties, whether express, implied,
               statutory or otherwise, with respect to the Service, including all implied
               warranties of merchantability, fitness for a particular purpose, title and
               non-infringement, and warranties that may arise out of course of dealing,
               course of performance, usage or trade practice. Without limitation to the
-              foregoing, the Company provides no warranty or undertaking, and makes no
+              foregoing, DigiParser (Legal name: Patidar Consultancy) provides no warranty or undertaking, and makes no
               representation of any kind that the Service will meet Your requirements,
               achieve any intended results, be compatible or work with any other software,
               applications, systems or services, operate without interruption, meet any
@@ -210,14 +209,14 @@ export default function TNC() {
               defects can or will be corrected.
             </p>
             <p>
-              Without limiting the foregoing, neither the Company nor any of the company's
+              Without limiting the foregoing, neither DigiParser (Legal name: Patidar Consultancy) nor any of the company's
               provider makes any representation or warranty of any kind, express or
               implied: (i) as to the operation or availability of the Service, or the
               information, content, and materials or products included thereon; (ii) that
               the Service will be uninterrupted or error-free; (iii) as to the accuracy,
               reliability, or currency of any information or content provided through the
               Service; or (iv) that the Service, its servers, the content, or e-mails sent
-              from or on behalf of the Company are free of viruses, scripts, trojan
+              from or on behalf of DigiParser (Legal name: Patidar Consultancy) are free of viruses, scripts, trojan
               horses, worms, malware, timebombs or other harmful components.
             </p>
             <p>
@@ -236,7 +235,7 @@ export default function TNC() {
             <h2>Disputes Resolution</h2>
             <p>
               If You have any concern or dispute about the Service, You agree to first try
-              to resolve the dispute informally by contacting the Company.
+              to resolve the dispute informally by contacting DigiParser (Legal name: Patidar Consultancy).
             </p>
             <h2>For European Union (EU) Users</h2>
             <p>
@@ -301,7 +300,7 @@ export default function TNC() {
               us:
             </p>
             <ul>
-              <li>By email: support@digiparser.com</li>
+              <li>By email: support@patidarconsultancy.com</li>
             </ul>
           </>
         </div>
