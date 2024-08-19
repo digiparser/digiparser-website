@@ -9,7 +9,7 @@ export default function TNC() {
             <h2 className="text-base font-semibold leading-7 text-indigo-600">
               <span
                 className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
-                DigiParser (Legal name: Patidar Consultancy)
+                DigiParser
               </span>
             </h2>
 
