@@ -294,6 +294,30 @@ export default function TNC() {
             <p>
               We do not offer refunds for any payments made. This is due to the costs associated with running AI models and providing our services. Once a payment is processed, it is non-refundable, and we encourage you to review our services thoroughly before making a commitment.
             </p>
+            <h2>Use of AI</h2>
+            <p>
+              DigiParser utilizes advanced AI and machine learning algorithms to automate the extraction, processing, and analysis of data from documents. While our AI models are designed to provide accurate and efficient results, we do not guarantee that the AI-generated outputs will be free from errors. By using our Service, you acknowledge and accept that the AI-generated outputs are provided on an "as is" basis and should be reviewed by a human for critical decisions.
+            </p>
+            <h2>Data Security</h2>
+            <p>
+              We take the security of your data seriously and implement industry-standard measures to protect your information. This includes encryption, secure storage, and regular security audits. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security. By using our Service, you acknowledge and accept the risks associated with data transmission and storage.
+            </p>
+            <h2>Payment Terms</h2>
+            <p>
+              All payments made through DigiParser are processed securely using our third-party payment provider, Paddle. Payment information is not stored on our servers. Subscriptions are billed in advance on a recurring basis according to the billing cycle selected at the time of purchase. You agree to provide current, complete, and accurate payment information. In the event of a failed payment, access to the Service may be suspended until payment is successfully processed.
+            </p>
+            <h2>Customer Support</h2>
+            <p>
+              We are committed to providing prompt and effective customer support. Our standard response time for support inquiries is within 48 hours on business days. Support requests can be made via email at support@digiparser.com. We do not guarantee resolution times but will make every effort to resolve issues as quickly as possible.
+            </p>
+            <h2>Intellectual Property</h2>
+            <p>
+              All content, software, and technology provided through the DigiParser Service, including AI models, are the intellectual property of DigiParser (Legal name: Patidar Consultancy) and are protected by applicable copyright, trademark, and intellectual property laws. You may not copy, modify, distribute, sell, or lease any part of our Service or included software, nor may you reverse engineer or attempt to extract the source code of that software.
+            </p>
+            <h2>Modification of Services</h2>
+            <p>
+              DigiParser reserves the right to modify, suspend, or discontinue any aspect of the Service at any time, including the availability of any feature, database, or content. We will provide notice of significant changes via email or through the Service. Your continued use of the Service after any modifications indicates your acceptance of the changes.
+            </p>
             <h2>Contact Us</h2>
             <p>
               If you have any questions about these Terms and Conditions, You can contact
