@@ -23,7 +23,7 @@ export default function TNC() {
         </div>
         <div className="max-w-5xl mx-auto mt-12 prose prose-lg dark:prose-invert">
           <>
-            <p>Last updated: July 14, 2024</p>
+            <p>Last updated: August 19, 2024</p>
             <p>
               Please read these terms and conditions carefully before using Our Service.
             </p>
@@ -93,7 +93,7 @@ export default function TNC() {
               </li>
               <li>
                 <p>
-                  <strong>Website</strong> refers to Patidar Consultancy, accessible from{" "}
+                  <strong>Website</strong> refers to DigiParser, accessible from{" "}
                   <a
                     href="https://www.digiparser.com"
                     rel="external nofollow noopener"
@@ -300,7 +300,7 @@ export default function TNC() {
               us:
             </p>
             <ul>
-              <li>By email: support@patidarconsultancy.com</li>
+              <li>By email: support@digiparser.com</li>
             </ul>
           </>
         </div>
