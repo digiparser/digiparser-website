@@ -1,3 +1,5 @@
+'use client'
+
 import FAQ from "@/components/dashboard/faq";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -10,6 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
+import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import {
   Table,
@@ -21,9 +24,15 @@ import {
 } from "@/components/ui/table";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import { CheckCircledIcon } from "@radix-ui/react-icons";
-import { CheckIcon, MinusIcon } from "lucide-react";
+import { CheckIcon, InfoIcon, MinusIcon } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Balancer from "react-wrap-balancer";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 interface PlanFeature {
   type: string;
@@ -119,6 +128,29 @@ const planFeatures: PlanFeature[] = [
 ];
 
 export default function PricingSectionCards() {
+
+  const [sliderValue, setSliderValue] = useState([1]);
+  const [credits, setCredits] = useState(100);
+
+  const getPrice = (credits: number) => {
+    if (credits <= 100) return 29;
+    if (credits <= 200) return 49;
+    if (credits <= 500) return 99;
+    if (credits <= 1000) return 199;
+    if (credits <= 2000) return 299;
+    if (credits <= 4000) return 499;
+    return 999;
+  };
+
+  useEffect(() => {
+    const newValue = sliderValue[0];
+    if (newValue <= 10) {
+      setCredits(newValue * 100);
+    } else if (newValue > 10) {
+      setCredits((newValue - 10) * 1000);
+    }
+  }, [sliderValue]);
+
   return (
     <>
       <div className="container py-12 lg:py-16">
@@ -152,11 +184,11 @@ export default function PricingSectionCards() {
         <div className="max-w-5xl mx-auto mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:items-center justify-center">
           <Card>
             <CardHeader className="text-center pb-2">
-              <CardTitle className="mb-7">Free</CardTitle>
+              <CardTitle className="mb-7">Everyone starts</CardTitle>
               <span className="font-bold text-5xl">Free</span>
             </CardHeader>
             <CardDescription className="text-center">
-              Get the taste of DigiParser for free
+              {/* Get the taste of DigiParser for free */}
             </CardDescription>
             <CardContent>
               <ul className="mt-7 space-y-2.5 text-sm">
@@ -196,24 +228,56 @@ export default function PricingSectionCards() {
           </Card>
           <Card className="border-primary">
             <CardHeader className="text-center pb-2">
-              <CardTitle className="!mb-7">Pro</CardTitle>
+              <CardTitle className="!mb-7">Pick a plan</CardTitle>
               <span className="font-bold text-5xl">
-                $99 <small className="text-xs text-muted-foreground">per month</small>
+                ${getPrice(credits)} <small className="text-xs text-muted-foreground">per month</small>
               </span>
             </CardHeader>
             <CardDescription className="text-center w-11/12 mx-auto">
-              Everything you need to automate paperwork
+              
             </CardDescription>
             <CardContent>
+              <div className="flex flex-col items-start justify-center space-y-4 m-4 mt-8">
+                <Slider 
+                  value={sliderValue} 
+                  onValueChange={setSliderValue} 
+                  min={1} 
+                  max={20} 
+                  step={1} 
+                  className="cursor-pointer" 
+                  thumbClassName="bg-white"
+                />
+                <span className="text-muted-foreground">
+                  <HoverCard openDelay={100}>
+                    <HoverCardTrigger asChild>
+                      <span className="flex items-center text-foreground">
+                        {credits} credits per month
+                        <InfoIcon className="ml-1 h-4 w-4 cursor-pointer" />
+                      </span>
+                    </HoverCardTrigger>
+                    <HoverCardContent className="w-80">
+                      <div className="space-y-2">
+                        <h4 className="text-sm font-semibold">What's a credit?</h4>
+                        <p className="text-sm">
+                          1 credit is equal to:
+                        </p>
+                        <ul className="text-sm list-disc pl-4">
+                          <li>1 page of a document</li>
+                          <li>1 image</li>
+                        </ul>
+                        <p className="text-sm">
+                          Credits determine how many document pages or images you can process per month.
+                        </p>
+                      </div>
+                    </HoverCardContent>
+                  </HoverCard>
+                </span>
+              </div>
               <ul className="mt-7 space-y-2.5 text-sm">
-                <li className="flex space-x-2">
+                {/* <li className="flex space-x-2">
                   <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
-                  <span className="text-muted-foreground">500 documents per month</span>
-                </li>
-                <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
-                  <span className="text-muted-foreground">additional documents at $0.2/page</span>
-                </li>
+                  <span className="text-muted-foreground">additional credits at $0.2/credit</span>
+                </li> */}
                 <li className="flex space-x-2">
                   <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Unlimited parsers</span>
@@ -239,7 +303,7 @@ export default function PricingSectionCards() {
             <CardFooter>
               <Button className="w-full">
                 <Link href={'https://app.digiparser.com/auth/join'}>
-                  Start for free
+                  Get started now
                 </Link>
               </Button>
             </CardFooter>
