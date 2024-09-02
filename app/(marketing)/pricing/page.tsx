@@ -33,6 +33,16 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 interface PlanFeature {
   type: string;
@@ -272,6 +282,43 @@ export default function PricingSectionCards() {
                     </HoverCardContent>
                   </HoverCard>
                 </span>
+              </div>
+              <div>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="outline">View all plans</Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-md">
+                    <DialogHeader>
+                      <DialogTitle>All Plans</DialogTitle>
+                      <DialogDescription>
+                        Choose the plan that best fits your needs.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <div className="space-y-4 py-4">
+                      {[100, 200, 500, 1000, 2000, 4000, 10000].map((planCredits) => (
+                        <div key={planCredits} className="flex items-center justify-between">
+                          <div>
+                            <p className="font-semibold">${getPrice(planCredits)}/month</p>
+                            <p className="text-sm text-muted-foreground">{planCredits} credits</p>
+                          </div>
+                          <Button variant={'outline'}>
+                            <Link href={`https://app.digiparser.com/auth/join?plan=${planCredits}`}>
+                              Get Started
+                            </Link>
+                          </Button>
+                        </div>
+                      ))}
+                    </div>
+                    <DialogFooter className="sm:justify-start">
+                      <DialogClose asChild>
+                        <Button type="button" variant="secondary">
+                          Close
+                        </Button>
+                      </DialogClose>
+                    </DialogFooter>
+                  </DialogContent>
+                </Dialog>
               </div>
               <ul className="mt-7 space-y-2.5 text-sm">
                 {/* <li className="flex space-x-2">
