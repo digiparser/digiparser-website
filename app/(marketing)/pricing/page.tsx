@@ -2,7 +2,7 @@
 
 import FAQ from "@/components/dashboard/faq";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -43,6 +43,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { cn } from "@/lib/utils";
 
 interface PlanFeature {
   type: string;
@@ -229,11 +230,9 @@ export default function PricingSectionCards() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" variant="outline">
-                <Link href={'https://app.digiparser.com/auth/join'}>
-                  Start for free
-                </Link>
-              </Button>
+              <Link href={'https://app.digiparser.com/auth/join'} className={cn('w-full', buttonVariants({ variant: "outline" }))}>
+                Start for free
+              </Link>
             </CardFooter>
           </Card>
           <Card className="border-primary">
@@ -286,7 +285,7 @@ export default function PricingSectionCards() {
               <div>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline">View all plans</Button>
+                    <Button variant="outline" className="w-full">View all plans</Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-md">
                     <DialogHeader>
@@ -302,11 +301,9 @@ export default function PricingSectionCards() {
                             <p className="font-semibold">${getPrice(planCredits)}/month</p>
                             <p className="text-sm text-muted-foreground">{planCredits} credits</p>
                           </div>
-                          <Button variant={'outline'}>
-                            <Link href={`https://app.digiparser.com/auth/join?plan=${planCredits}`}>
-                              Get Started
-                            </Link>
-                          </Button>
+                          <Link href={`https://app.digiparser.com/auth/join?plan=${planCredits}`} className={cn(buttonVariants({ variant: "outline" }))}>
+                            Get Started
+                          </Link>
                         </div>
                       ))}
                     </div>
@@ -348,11 +345,9 @@ export default function PricingSectionCards() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">
-                <Link href={'https://app.digiparser.com/auth/join'}>
-                  Get started now
-                </Link>
-              </Button>
+              <Link href={'https://app.digiparser.com/auth/join'} className={cn('w-full', buttonVariants({ variant: "default" }))}>
+                Get started now
+              </Link>
             </CardFooter>
           </Card>
           <Card>
@@ -387,11 +382,9 @@ export default function PricingSectionCards() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" variant="outline">
-                <Link href={'mailto:sales@digiparser.com'}>
-                  Contact us
-                </Link>
-              </Button>
+              <Link href={'mailto:sales@digiparser.com'} className={cn('w-full', buttonVariants({ variant: "outline" }))}>
+                Contact us
+              </Link>              
             </CardFooter>
           </Card>
         </div>
