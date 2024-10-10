@@ -6,7 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { GetStartedButton } from "@/components/buttons/GetStartedButton";
 import { BusinessLine } from "@/components/dashboard/businessline";
 import CallToActionComponent from "@/components/dashboard/calltoaction";
-import Featuressection from "@/components/dashboard/feautressection";
+import FeaturesSection from "@/components/dashboard/features-section";
 import { Icons } from "@/components/shared/icons";
 import {VideoCameraIcon} from '@heroicons/react/24/outline';
 import { ChevronRightIcon } from "@radix-ui/react-icons";
@@ -14,26 +14,29 @@ import SignUpFormReact from "@/components/waitlistForm";
 import FAQ from "@/components/dashboard/faq";
 import { siteConfig } from "@/config/site";
 import { FlipWords } from "@/components/ui/flip-words";
+import { Carousel } from "@/components/home/apple-cards-carousel";
+import { AppleCardsCarouselDemo } from "@/components/home/AppleCardsCarouselDemo";
+import FlowSection from "@/components/dashboard/flow-section";
 
 export const metadata = {
-  title: "DigiParser - Extract data from documents and automate paperwork",
-  description: "An app that lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
+  title: "DigiParser - Extract data from documents and emails",
+  description: "DigiParser lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
   openGraph: {
-    title: "DigiParser - Extract data from documents and automate paperwork",
-    description: "An app that lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
+    title: "DigiParser - Extract data from documents and emails",
+    description: "DigiParser lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "DigiParser - Extract data from documents and automate paperwork",
+        alt: "DigiParser - Extract data from documents and emails",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DigiParser - Extract data from documents and automate paperwork",
-    description: "An app that lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
+    title: "DigiParser - Extract data from documents and emails",
+    description: "DigiParser lets you import any documents, extract JSON data based on your defined schema, and export this data to your business tools for automated data entries.",
     images: [siteConfig.ogImage],
   },
 }
@@ -111,9 +114,13 @@ export default async function IndexPage() {
           </div>
         </div>
       </section>
-      <BusinessLine />
+      {/* <AppleCardsCarouselDemo /> */}
+      {/* <BusinessLine /> */}
       <section>
-        <Featuressection />
+        <FeaturesSection />
+      </section>
+      <section>
+        <FlowSection />
       </section>
       <section>
         <CallToActionComponent />

@@ -1,3 +1,4 @@
+const { withNextVideo } = require('next-video/process')
 
 const { withContentlayer } = require("next-contentlayer")
 
@@ -33,7 +34,15 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'tailwindui.com',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.aceternity.com',
+      },
     ],
   },
 }
