@@ -17,6 +17,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { Carousel } from "@/components/home/apple-cards-carousel";
 import { AppleCardsCarouselDemo } from "@/components/home/AppleCardsCarouselDemo";
 import FlowSection from "@/components/dashboard/flow-section";
+import Script from "next/script";
 
 export const metadata = {
   title: "DigiParser - Extract data from documents and emails",
@@ -96,21 +97,26 @@ export default async function IndexPage() {
             style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
           >
             <GetStartedButton />
-            {/* <Link
-              href={"/signin"}
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                "px-4",
-              )}
-            >
-              <VideoCameraIcon className="mr-2 h-4 w-4" />
-              <p>
-                Watch{" "}
-                <span className="hidden sm:inline-block">Demo</span>{" "}
-                Video
-              </p>
-            </Link> */}
-            {/* <SignUpFormReact /> */}
+          </div>
+
+          {/* Add social proof badges */}
+          <div className="flex justify-center space-x-8 mt-6">
+            <div
+              className="sf-root"
+              data-id="3807836"
+              data-badge="customers-love-us-white"
+              data-variant-id="sf"
+              style={{ width: "100px" }}
+            ></div>
+            <div
+              className="sf-root"
+              data-id="3807836"
+              data-badge="users-love-us-new-white"
+              data-variant-id="sd"
+              style={{ width: "100px" }}
+            ></div>
+            <Script src="https://b.sf-syn.com/badge_js?sf_id=3807836&variant_id=sf" async />
+            <Script src="https://b.sf-syn.com/badge_js?sf_id=3807836&variant_id=sd" async />
           </div>
         </div>
       </section>

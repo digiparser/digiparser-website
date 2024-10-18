@@ -8,9 +8,6 @@ import Player from 'next-video/player';
 // @ts-ignore
 import BackgroundPlayer from 'next-video/background-player';
 
-// const Player = dynamic(() => import('next-video/player') as any, { ssr: false });
-// const BackgroundPlayer = dynamic(() => import('next-video/background-player') as any, { ssr: false });
-
 export default function FeaturesSection() {
   const features = [
     {
