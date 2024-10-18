@@ -100,7 +100,7 @@ export default async function IndexPage() {
           </div>
 
           {/* Add social proof badges */}
-          <div className="flex justify-center space-x-8 mt-6">
+          <div className="flex justify-center space-x-8 mt-6 pointer-events-none">
             <div
               className="sf-root"
               data-id="3807836"
