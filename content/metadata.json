@@ -1,6 +1,6 @@
 {
-  "commit": "59dea2317c591dbdd3d80bb6fdfa95d55d9dccd2",
-  "generated": "2024-10-18T07:15:52.578Z",
+  "commit": "f49a5e13147d4bcacf2c2de7b0e50cbf11a3ed32",
+  "generated": "2024-10-18T07:16:26.131Z",
   "metadata": [
     {
       "__outstatic": {
@@ -46,8 +46,8 @@
     },
     {
       "__outstatic": {
-        "commit": "59dea2317c591dbdd3d80bb6fdfa95d55d9dccd2",
-        "hash": "1161114167",
+        "commit": "f49a5e13147d4bcacf2c2de7b0e50cbf11a3ed32",
+        "hash": "2871143660",
         "path": "content/blog/what-is-document-processing-the-ultimate-beginner-s-guide.md"
       },
       "author": {
@@ -57,7 +57,7 @@
       "authorLink": "",
       "authorUsername": "",
       "collection": "blog",
-      "coverImage": "",
+      "coverImage": "https://www.digiparser.com/images/screenshot-2024-08-17-at-6.30.05-pm-YwMT.png",
       "description": "",
       "publishedAt": "2024-10-18T07:43:06.947Z",
       "slug": "what-is-document-processing-the-ultimate-beginner-s-guide",

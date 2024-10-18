@@ -6,8 +6,8 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/17493609?v=4'
 slug: 'what-is-document-processing-the-ultimate-beginner-s-guide'
 description: ''
-coverImage: ''
-tags: ''
+coverImage: 'https://www.digiparser.com/images/screenshot-2024-08-17-at-6.30.05-pm-YwMT.png'
+tags: []
 authorLink: ''
 authorUsername: ''
 publishedAt: '2024-10-18T07:43:06.947Z'
