@@ -1,6 +1,6 @@
 {
-  "commit": "22645622961aca83285c84776a9e3f3c10583da8",
-  "generated": "2024-08-17T14:00:12.876Z",
+  "commit": "59dea2317c591dbdd3d80bb6fdfa95d55d9dccd2",
+  "generated": "2024-10-18T07:15:52.578Z",
   "metadata": [
     {
       "__outstatic": {
@@ -43,6 +43,28 @@
       "tags": [
       ],
       "title": "Extract Text From an Image: Step-by-Step Guide"
+    },
+    {
+      "__outstatic": {
+        "commit": "59dea2317c591dbdd3d80bb6fdfa95d55d9dccd2",
+        "hash": "1161114167",
+        "path": "content/blog/what-is-document-processing-the-ultimate-beginner-s-guide.md"
+      },
+      "author": {
+        "name": "Pankaj Patidar",
+        "picture": "https://avatars.githubusercontent.com/u/17493609?v=4"
+      },
+      "authorLink": "",
+      "authorUsername": "",
+      "collection": "blog",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-10-18T07:43:06.947Z",
+      "slug": "what-is-document-processing-the-ultimate-beginner-s-guide",
+      "status": "draft",
+      "tags": [
+      ],
+      "title": "What is Document Processing? The Ultimate Beginner's Guide"
     }
   ]
 }
