@@ -23,7 +23,7 @@ In today's fast-paced business environment, efficient document processing is not
 - **Competitive Edge**: Companies that adopt advanced **documents processing** technologies can respond faster to market changes and customer needs.
 - **Cost Reduction**: Eliminating manual processing reduces labor costs and minimizes the risk of errors that can lead to financial losses.
 
-![Illustration comparing manual paperwork with automatic digital document processing.](/images/manual-work-vs-automated-paperwork-YyMT.webp)
+![](/images/image-A3Mj.png)
 
 ### **Challenges of Manual Paperwork Processing**
 
@@ -60,7 +60,7 @@ The journey of document processing has evolved significantly over the years:
 
 This evolution underscores the shift from manual **documents processing** to intelligent solutions that enhance efficiency, accuracy, and scalability.
 
-![](/images/image-g4Nz.png)
+![](/images/image-cwMT.png)
 
 ---
 
@@ -90,7 +90,7 @@ Key features of IDP:
 
 By adopting IDP, businesses can overcome the limitations of traditional methods, leading to significant improvements in **processing docs** efficiently.
 
-![](/images/image-MzMj.png)
+![](/images/image-A1MD.png)
 
 ---
 
@@ -126,7 +126,7 @@ AI and ML are the driving forces behind IDP:
 
 By leveraging AI and ML, IDP systems can handle complex **documentation processing** tasks, adapt to new document types, and continuously improve performance.\
 \
-*![](/images/image-Q1OD.png)*
+*![](/images/image-g2OD.png)*
 
 ---
 
@@ -160,7 +160,7 @@ Adopting Intelligent Document Processing offers a multitude of benefits for busi
 - **Regulatory Compliance**: Helps maintain compliance with industry regulations through accurate record-keeping and data handling.
 
 \
-![](/images/image-kxMz.png)
+![](/images/image-Q1MT.png)
 
 ---
 
@@ -193,7 +193,7 @@ Intelligent Document Processing has broad applications across various industries
 - [**Onboarding Documents**](https://www.digiparser.com/case-studies/onboarding-documents): Automates processing of new hire paperwork, improving the onboarding experience.
 - [**Employee Records**](https://www.digiparser.com/case-studies/employee-records): Manages personnel files efficiently, aiding in compliance and record-keeping.
 
-![](/images/image-M1Mj.png)
+![](/images/image-QxMD.png)
 
 ---
 
@@ -278,7 +278,7 @@ To maximize the benefits of IDP, consider the following best practices:
   - **High Throughput**: Capable of processing vast volumes of documents efficiently.
   - **Scalability**: Grows with your business without compromising performance.
 
-![](/images/1-document-data-kyNz.png)
+![](/images/1-document-data-kxNT.png)
 
 ### **Integration Capabilities with External Tools**
 
@@ -286,7 +286,7 @@ To maximize the benefits of IDP, consider the following best practices:
 - **Workflow Automation**: Automate tasks across platforms, connecting with [QuickBooks](https://quickbooks.intuit.com/), [Xero](https://www.xero.com/), [Salesforce](https://www.salesforce.com/), and more.
 - **Data Export**: Facilitates smooth data transfer to other applications, enhancing overall workflow efficiency.
 
-![](/images/workflow-demo-M1OT.png)
+![](/images/workflow-demo-gwMz.png)
 
 ### **Advantages over Traditional Methods**
 
