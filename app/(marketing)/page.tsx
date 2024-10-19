@@ -100,7 +100,7 @@ export default async function IndexPage() {
           </div>
 
           {/* Add social proof badges */}
-          <div className="flex justify-center space-x-8 mt-6 pointer-events-none">
+          <div className="flex items-center justify-center space-x-8 mt-6 pointer-events-none">
             <div
               className="sf-root"
               data-id="3807836"
@@ -115,6 +115,9 @@ export default async function IndexPage() {
               data-variant-id="sd"
               style={{ width: "100px" }}
             ></div>
+            <div style={{ width: "120px" }}>
+              <a className="w-full" href='https://www.softwaresuggest.com/digiparser' target='_blank'><img src='https://www.softwaresuggest.com/award_logo/highly-recommended-winter-2024.png' /></a>
+            </div>
             <Script src="https://b.sf-syn.com/badge_js?sf_id=3807836&variant_id=sf" async />
             <Script src="https://b.sf-syn.com/badge_js?sf_id=3807836&variant_id=sd" async />
           </div>
