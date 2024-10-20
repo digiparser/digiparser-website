@@ -71,7 +71,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div className='flex justify-start container relative py-6 lg:py-10'>
-      <div className='w-96 p-4 pt-10 mr-8 sticky top-0 mb-auto hidden lg:block max-h-screen overflow-y-auto'>
+      <div className='w-96 p-4 pt-10 pb-24 mr-8 sticky top-0 mb-auto hidden lg:block max-h-screen overflow-y-auto'>
         <Link
           href="/notion-blog"
           className={cn(

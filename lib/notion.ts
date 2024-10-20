@@ -29,6 +29,13 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 export const getDatabase = cache(async () => {
     const response = await notion.databases.query({
         database_id: databaseId,
+        filter: {
+            property: 'PublishedDate',
+            date: {
+                is_not_empty: true,
+            },
+        },
+        sorts: [{ property: 'PublishedDate', direction: "descending" }]
     });
     return response.results;
 });
