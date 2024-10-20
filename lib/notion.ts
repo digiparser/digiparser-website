@@ -1,5 +1,6 @@
 import { Client } from '@notionhq/client';
 import { cache } from 'react';
+const { NotionToMarkdown } = require("notion-to-md");
 
 export const revalidate = 3600; // revalidate the data at most every hour
 
@@ -22,6 +23,8 @@ function getRandomInt(minimum, maximum) {
 const notion = new Client({
     auth: process.env.NOTION_TOKEN,
 });
+
+const n2m = new NotionToMarkdown({ notionClient: notion });
 
 export const getDatabase = cache(async () => {
     const response = await notion.databases.query({
@@ -51,6 +54,12 @@ export const getPageFromSlug = cache(async (slug) => {
         return response?.results?.[0];
     }
     return {};
+});
+
+export const getPageMarkdown = cache(async (pageId) => {
+    const mdblocks = await n2m.pageToMarkdown(pageId);
+    const mdString = n2m.toMarkdownString(mdblocks);
+    return mdString.parent;
 });
 
 export const getBlocks = cache(async (blockID) => {

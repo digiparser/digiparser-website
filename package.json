@@ -64,6 +64,7 @@
     "next-themes": "^0.2.1",
     "next-video": "^1.2.0",
     "nodemailer": "^6.9.7",
+    "notion-to-md": "^3.1.1",
     "outstatic": "^1.4.1",
     "posthog-js": "^1.150.0",
     "postmark": "^4.0.2",

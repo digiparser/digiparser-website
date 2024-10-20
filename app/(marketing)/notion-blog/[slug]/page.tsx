@@ -4,11 +4,14 @@ import Link from 'next/link';
 
 import {
   getDatabase, getBlocks, getPageFromSlug,
+  getPageMarkdown,
 } from '@/lib/notion';
 import Text from '@/components/text';
 import { renderBlock } from '@/components/notion/renderer';
 import { RenderBlocks } from '@/components/notion/ContentBlocks';
 import styles from '../../../../styles/post.module.css';
+import markdownToHtml from '@/lib/utils';
+import { Mdx } from '@/components/mdx-components';
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
@@ -22,8 +25,10 @@ export async function generateStaticParams() {
 export default async function Page({ params }: any) {
   const page: any = await getPageFromSlug(params?.slug);
   const blocks = await getBlocks(page?.id);
-
-  console.log('page', page, blocks);
+  const markdown = await getPageMarkdown(page?.id);
+  const content = await markdownToHtml(markdown);
+  
+  console.log('page', page, content);
 
   if (!page || !blocks) {
     return <div />;
@@ -41,7 +46,12 @@ export default async function Page({ params }: any) {
           <Text title={page.properties.Title?.title} />
         </h1>
         <section>
-          <RenderBlocks blocks={blocks} />
+          {/* <Mdx code={content} /> */}
+          <div
+            className="mdx prose prose-slate dark:prose-invert"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
+          {/* <RenderBlocks blocks={blocks} /> */}
           {/* {blocks.map((block) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))} */}
